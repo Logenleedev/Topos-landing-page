@@ -1,59 +1,164 @@
-<!DOCTYPE>
+<!DOCTYPE >
 <html>
-    <head>
-        <title>Snowboarding Landing Page</title>
-        <!--Insert semantic UI CSS-->
-        <link rel="stylesheet" type="text/css" href="../../Semantic-UI-CSS-master/semantic.min.css">
-        <!--Bulma-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--Link main page css style sheet-->
-        <link href="../styles/Team.css" rel="stylesheet" />
-        <!--Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <!--Bulma CSS-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-        <!--Font awesome 5-->
-        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-        <!--Insert Google font - Lacquer-->
-        <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
-    </head>
+	<head>
+		<title>Snowboarding Landing Page</title>
+		<!--Insert semantic UI CSS-->
+		<link rel="stylesheet" type="text/css" href="../../Semantic-UI-CSS-master/semantic.min.css" />
+		<!--Bulma-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--Link main page css style sheet-->
+		<link href="../styles/Team.css" rel="stylesheet" />
+		<!--Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+		<!--Bulma CSS-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+		<!--Font awesome 5-->
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<!--Insert Google font - Lacquer-->
+		<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet" />
+	</head>
 
-    <body>
-        <!--navigation bar-->
-        <div class="ui top fixed menu" id="navbar">
-            <div class="item">
-            <img src="../../Assest/image/sketchy_ascend.svg">
-            </div>
-            <a class="item">Home</a>
-            <a class="item">Team</a>
-            <a class="item">Contact</a>
+	<body>
+		<!--navigation bar-->
+		<div class="ui top fixed menu" id="navbar">
+			<div class="item">
+				<img src="../.././Assest/image/sketchy_ascend.svg" />
+			</div>
+			<a class="item">Home</a>
+			<a class="item">Team</a>
+			<a class="item">Contact</a>
+		</div>
+		<!--Meet the Team-->
+		<div class="TeamMember">
+			<div class="ui link cards" id="Team">
+				<div class="card" id="namecard">
+					<div class="image">
+						<img src="https://i.picsum.photos/id/1/5616/3744.jpg" />
+					</div>
+					<div class="content">
+						<div class="header">Matt Giampietro</div>
+						<div class="meta">
+							<a>Friends</a>
+						</div>
+						<div class="description">
+							Matthew is an interior designer living in New York.
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							Joined in 2013
+						</span>
+						<span>
+							<i class="user icon"></i>
+							75 Friends
+						</span>
+					</div>
+				</div>
+				<div class="card" id="namecard">
+					<div class="image">
+						<img src="https://i.picsum.photos/id/1/5616/3744.jpg" />
+					</div>
+					<div class="content">
+						<div class="header">Molly</div>
+						<div class="meta">
+							<span class="date">Coworker</span>
+						</div>
+						<div class="description">
+							Molly is a personal assistant living in Paris.
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							Joined in 2011
+						</span>
+						<span>
+							<i class="user icon"></i>
+							35 Friends
+						</span>
+					</div>
+				</div>
+				<div class="card" id="namecard">
+					<div class="image">
+						<img src="https://i.picsum.photos/id/1/5616/3744.jpg" />
+					</div>
+					<div class="content">
+						<div class="header">Elyse</div>
+						<div class="meta">
+							<a>Coworker</a>
+						</div>
+						<div class="description">
+							Elyse is a copywriter working in New York.
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							Joined in 2014
+						</span>
+						<span>
+							<i class="user icon"></i>
+							151 Friends
+						</span>
+					</div>
+				</div>
+			</div>
         </div>
-        <!--Banner image in the main page-->
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
-        <script src="../js/main.js"></script>
-        <!--Insert semantic JS-->
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="../../Semantic-UI-CSS-master/semantic.min.js"></script>
-    </body>
-
+		<div class="Footer">
+			<div class="credit">
+				<b>Credit to Jiatong Li</b>
+			</div>
+			<div class="footer-link">
+				<ul>
+					<a
+						><li><b>Home</b></li></a
+					>
+					<a
+						><li><b>Team</b></li></a
+					>
+					<a
+						><li><b>Contact</b></li></a
+					>
+				</ul>
+			</div>
+        </div>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"
+		></script>
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+		<script src="../js/main.js"></script>
+		<!--Insert semantic JS-->
+		<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"
+		></script>
+		<script src="../../Semantic-UI-CSS-master/semantic.min.js"></script>
+	</body>
 </html>
