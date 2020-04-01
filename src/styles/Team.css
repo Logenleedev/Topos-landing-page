@@ -68,22 +68,28 @@ a {
     right: 0px;
 }
 
-/*Team Member*/
-
-
-
-#Team {
-    display: flex;
+/*Image Wall*/
+.row {
+    display: inline-flex;
     justify-content: center;
-    position: relative !important;
-    height: auto;
-    padding-top: 70px; 
-}
+    margin-top: 70px;
+    flex-wrap: wrap;
+    padding: 70px 4px 30vh 20px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    max-width: 20%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 
-#namecard {
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 
 /*Footer*/
 .Footer {
