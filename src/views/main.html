@@ -3,78 +3,51 @@
     <head>
         <title>Snowboarding Landing Page</title>
         <!--Insert semantic UI CSS-->
-        <link rel="stylesheet" type="text/css" href="../../Semantic-UI-CSS-master/semantic.min.css" >
+        <link rel="stylesheet" type="text/css" href="/semantic.min.css" >
         <!--Bulma-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--Link main page css style sheet-->
-        <link href="../styles/main.css" rel="stylesheet" />
+        <link href="/styles/main.css" rel="stylesheet" />
         <!--Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
         <!--Bulma CSS-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
         <!--Font awesome 5-->
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <!--Insert Google font - Lacquer-->
-        <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet" />
+        <!--Insert Google font - Zcool-->
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <!--navigation bar-->
         <div class="ui top fixed menu" id="navbar">
             <div class="item">
-            <img src="../../Assest/image/sketchy_ascend.svg">
+                <img src="/image/Topos-logo.svg" />
             </div>
-            <a class="item">Home</a>
-            <a class="item" action="/portfolio" method="post">Portfolio</a>
-            <a class="item">Contact</a>
+            <a class="item" href="/about-us">关于</a>
+            <a class="item">联系我们</a>
         </div>
         <!--Banner image in the main page-->
         <div class="banner">
             <div class="banner-content">
-                <h1 class="banner-heaeder">Watch our live video!</h2>
-                    <a id="banner-button" href="https://vimeo.com/85087990" target="_blank"><button type="button"
-                            class="btn btn-info">Let us go!</button></a>
+                <h1 class="banner-heaeder"></h2>
             </div>
         </div>
-        <div class="product-introduction">
-            <div class="product-you-love">
-                <div class="center-helper">
-                    <div class="body-icon">
-                        <img src="../../Assest/image/gift-outline.svg"/>
-                    </div>
-                    <div class="text-introduction">
-                        <h1><b>Products you have</b></h1><br />
-                        <p>Find 1000s product you love. From stores you already shop at</p>
-                    </div>
-                </div>
+        <!--Product Introduction-->
+        <div class="ui grid">
+            <div class="ten wide column" id="Section-One-Container-text">
+                <h1 class="title">分享你的想法和知识</p>
             </div>
-            <div class="same-day-delivery">
-                <div class="center-helper">
-                    <div class="body-icon">
-                        <img src="../../Assest/image/clock-outline.svg"/>
-                    </div>
-                    <div class="text-introduction">
-                        <h1><b>Same day delivery</b></h1><br />
-                        <p>We make deliveries in cities like Los Angeles, Miami, New York City, Chicago, Austin, Washington D.C, Houston, Atlanta and many more.</p>
-                    </div>
-                </div>
+            <div class="six wide column" id="Section-One-Container">
+                <img src="/image/PlaceholderA.jpg" id="Section-One">
             </div>
-            <div class="downloads">
-                <div class="center-helper">
-                    <div class="body-icon">
-                        <img src="../../Assest/image/arrow-circle-down-outline.png"/>
-                    </div>
-                    <div class="text-introduction">
-                        <h1><b>Downloads the App</b></h1><br />
-                        <p>Order anything from you phone app</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
         <div class="Trigger">
             <h1 class="call-to-action"><b>Ready to give a try?</b></h1>
             <button class="ui primary button" id="save-button">Save</button>
@@ -106,12 +79,11 @@
         <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
-        <script src="../js/main.js"></script>
+        <script src="./js/main.js"></script>
         <!--Insert semantic JS-->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="../../Semantic-UI-CSS-master/semantic.min.js"></script>
-        <script src="../../control/control.js"></script>
+        <script src="/semantic.min.js"></script>
     </body>
 
 </html>
