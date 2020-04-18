@@ -162,13 +162,26 @@ a {
 
 .Trigger {
     text-align: center;
-    background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
     margin: 5% auto;
     padding: 10%;
 }
 
 .Trigger h1 {
     color: white;
+}
+
+.download-description {
+    color: black;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 25px;
+}
+
+.Apple-Download {
+    margin-top: 3% !important;
+}
+
+.Android-Download {
+    margin-top: 3% !important;
 }
 
 #save-button {
@@ -180,13 +193,13 @@ a {
     justify-content: space-between;
     width: 100%;
     height: 20vh;
-    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%) !important; 
 }
 
 .credit {
-    color: white;
+    color: black;
 }
 
 .footer-link {
-    color: white;
+    color: black;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
