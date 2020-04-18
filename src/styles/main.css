@@ -104,15 +104,52 @@ a {
     font-size: 35px;
     color: black;
     width: 100%;
-    padding: 15px;
-   
+    padding: 20% 10% 20% 20%;
+
 }
 
 #Section-One-Container {
     padding: 20% 10% 20% 20%;
 }
 
+#Section-Two-Container-text{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+}
 
+#Section-Two-Container-text .title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 35px;
+    color: black;
+    width: 100%;
+    padding: 0 10% 20% 20%;
+
+}
+
+#Section-Two-Container {
+    padding: 10% 10% 10% 20%;
+}
+
+
+#Section-Three-Container-text{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+}
+
+#Section-Three-Container-text .title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 35px;
+    color: black;
+    width: 100%;
+    padding: 0 10% 20% 20%;
+
+}
+
+#Section-Three-Container {
+    padding: 10% 10% 10% 20%;
+}
 
 
 
