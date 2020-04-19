@@ -26,8 +26,9 @@ app.get('/',(req,res)=>{
     res.sendFile('./src/views/main.html',  { root: __dirname });
 })
 
-app.get('/about-us',(req,res)=> {
-    res.sendFile('./src/views/Team.html',  { root: __dirname });
+//ABOUT GET
+app.get('/About',(req,res)=>{
+    res.sendFile('./src/views/About.html',  { root: __dirname });
 })
 
 

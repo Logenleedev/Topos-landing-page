@@ -28,7 +28,7 @@ time, mark, audio, video {
 }
 
 body {
-    line-height: 1;
+    line-height:1;
 }
 
 article,aside,details,figcaption,figure,
@@ -68,44 +68,31 @@ a {
     right: 0px;
 }
 
-/*Image Wall*/
-.row {
-    display: inline-flex;
-    justify-content: center;
-    margin-top: 70px;
-    flex-wrap: wrap;
-    padding: 70px 4px 30vh 20px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    max-width: 20%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-
+/* About Section */
+.About {
+    margin-top: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 15%;
+}
 
 /*Footer*/
 .Footer {
     display: flex;
-    position: absolute;
     justify-content: space-between;
     width: 100%;
     height: 20vh;
-    bottom: 0 !important;
-    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%) !important; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
+
 .credit {
-    color: white;
+    color: black;
 }
 
 .footer-link {
-    color: white;
+    color: black;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
