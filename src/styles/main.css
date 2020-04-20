@@ -195,6 +195,14 @@ a {
     height: 20vh;
 }
 
+a.footer-main-page {
+    color: black;
+}
+
+a.footer-about-page {
+    color: black;
+}
+
 .credit {
     color: black;
 }
