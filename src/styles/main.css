@@ -285,4 +285,9 @@ a.footer-about-page {
     .logo-button {
         display: inline;
     }
+
+    .mobile-download,
+    .mobile-product-container {
+        display: none;
+    }
 }
