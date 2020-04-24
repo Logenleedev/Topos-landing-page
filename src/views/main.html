@@ -30,18 +30,18 @@
         <!-- navigation bar for mobile -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mobile-menu">
             <div class="logo-button">
-                <a class="navbar-brand" href="#"><img class="mobile-logo" src="/image/Topos-logo.svg" max-width="40px" width="10%"></a>
+                <a class="navbar-brand" href="/"><img class="mobile-logo" src="/image/Topos-logo.svg" max-width="40px" width="10%"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">主页<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">主页<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">关于</a>
+                        <a class="nav-link" href="/About">关于</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">联系我们</a>
@@ -64,46 +64,81 @@
                 <h1 class="banner-heaeder"></h2>
             </div>
         </div>
-        <!--Product Introduction-->
-        <div class="ui grid" id="Section-One">
-            <div class="ten wide column" id="Section-One-Container-text">
-                <h1 class="title">分享想法和知识</p>
+        <!-- Web Product Introduction-->
+        <div class="web-product-intro">
+            <div class="ui grid" id="Section-One">
+                <div class="ten wide column" id="Section-One-Container-text">
+                    <h1 class="title">分享想法和知识</p>
+                </div>
+                <div class="six wide column" id="Section-One-Container">
+                    <img src="/image/PlaceholderA.jpg" id="Section-One">
+                </div>
             </div>
-            <div class="six wide column" id="Section-One-Container">
-                <img src="/image/PlaceholderA.jpg" id="Section-One">
+            <div class="ui grid" id="Section-Two">
+                <div class="six wide column" id="Section-Two-Container">
+                    <img src="/image/PlaceholderA.jpg" id="Section-Two">
+                </div>
+                <div class="ten wide column" id="Section-Two-Container-text">
+                    <h1 class="title">分享想法和知识</p>
+                </div>
+            </div>
+            <div class="ui grid" id="Section-Three">
+                <div class="ten wide column" id="Section-Three-Container-text">
+                    <h1 class="title">分享想法和知识</p>
+                </div>
+                <div class="six wide column" id="Section-Three-Container">
+                    <img src="/image/PlaceholderA.jpg" id="Section-Three">
+                </div>
+            </div>
+            <div class="Trigger">
+                <h2 class="download-description">下载方式:</h2>
+                <img src="/image/Download-Badger/apple-download.svg" class="Apple-Download" width="70px"/><br />
+                <img src="/image/Download-Badger/android-bot.svg" class="Android-Download" width="70px"/>
+            </div>
+            <div class="Footer">
+                <div class="credit">
+                    <b>Copyright 2020 by Topos</b>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <a><li><a href="/" class="footer-main-page"><b>主页</b></a></li></a>
+                        <a><li><a href="/About" class="footer-about-page"><b>关于</b></a></li></a>
+                        <a><li><b>联系我们</b></li></a>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="ui grid" id="Section-Two">
-            <div class="six wide column" id="Section-Two-Container">
-                <img src="/image/PlaceholderA.jpg" id="Section-Two">
+        <!-- Mobile Product Introduction-->
+        <div class="mobile-product-container">
+            <div id="image-container">
+                <img src="/image/boxed-water-is-better-G15G-Any-D0-unsplash.jpg" />
             </div>
-            <div class="ten wide column" id="Section-Two-Container-text">
-                <h1 class="title">分享想法和知识</p>
-            </div>
-        </div>
-        <div class="ui grid" id="Section-Three">
-            <div class="ten wide column" id="Section-Three-Container-text">
-                <h1 class="title">分享想法和知识</p>
-            </div>
-            <div class="six wide column" id="Section-Three-Container">
-                <img src="/image/PlaceholderA.jpg" id="Section-Three">
+            <div class="description-container">
+                探索未知的领域
             </div>
         </div>
-        <div class="Trigger">
-            <h2 class="download-description">下载方式:</h2>
-            <img src="/image/Download-Badger/apple-download.svg" class="Apple-Download" width="70px"/><br />
-            <img src="/image/Download-Badger/android-bot.svg" class="Android-Download" width="70px"/>
-        </div>
-        <div class="Footer">
-            <div class="credit">
-                <b>Copyright 2020 by Topos</b>
+        <div class="mobile-product-container">
+            <div id="image-container">
+                <img src="/image/boxed-water-is-better-G15G-Any-D0-unsplash.jpg" />
             </div>
-            <div class="footer-link">
-                <ul>
-                    <a><li><a href="/" class="footer-main-page"><b>主页</b></a></li></a>
-                    <a><li><a href="/About" class="footer-about-page"><b>关于</b></a></li></a>
-                    <a><li><b>联系我们</b></li></a>
-                </ul>
+            <div class="description-container">
+                探索未知的领域
+            </div>
+        </div>
+        <div class="mobile-product-container">
+            <div id="image-container">
+                <img src="/image/boxed-water-is-better-G15G-Any-D0-unsplash.jpg" />
+            </div>
+            <div class="description-container">
+                探索未知的领域
+            </div>
+        </div>
+        <!-- Mobile Download -->
+        <div class="mobile-download">
+            <div class="Trigger">
+                <h2 class="download-description">下载方式:</h2>
+                <img src="/image/Download-Badger/apple-download.svg" class="Apple-Download" width="70px"/><br />
+                <img src="/image/Download-Badger/android-bot.svg" class="Android-Download" width="70px"/>
             </div>
         </div>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -122,7 +157,7 @@
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
         <script src="./js/main.js"></script>
-        <!--Insert semantic JS-->
+        <!-- Insert semantic js -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="/semantic.min.js"></script>

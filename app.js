@@ -2,7 +2,6 @@ var express = require("express");
     path = require("path"),
     app = express(),
     bodyparser = require('body-parser'),
-    controls = require('./control/control.js'),
     fs = require('fs');
 
     global.__basedir = __dirname;
@@ -13,7 +12,7 @@ let port = process.env.PORT || 8000;
 app.use(express.static('Semantic-UI-CSS-master'));
 
 app.use(express.static(path.join(__dirname,'src')));
-
+app.use(express.static(path.join(__dirname,'control')));
 app.use(express.static(path.join(__dirname,'Assest')));
 
 
@@ -35,3 +34,4 @@ app.get('/About',(req,res)=>{
 app.listen(port, function(){
     console.log('Server Started on Port 8000')
 });
+

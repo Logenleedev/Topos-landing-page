@@ -216,6 +216,7 @@ a.footer-about-page {
 
 /* Mobile Side */
 @media screen and (max-width: 768px){
+    /* Responsive Menu */
     #web-menu {
         display: none;
     }
@@ -223,15 +224,18 @@ a.footer-about-page {
     a.navbar-brand {
         padding-top: 0;
         padding-bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     a.navbar-brand {
-        width: 5% !important;
-        display:inline-block;
+        width: 9% !important;
+        display: inline-block;
+        margin-left: 0;
     }
 
     button.navbar-toggler {
-        margin-right: 0;
+        float: right;
     }
     
     img.mobile-logo {
@@ -242,7 +246,33 @@ a.footer-about-page {
         width: 90%;
         display: inline;
         margin-left: auto;
-        margin-right: auto;
+    }
+
+    .web-product-intro {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    div.mobile-product-container {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top:5%;
+    }
+
+    div.description-container {
+        margin: 10%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #image-container img {
+        width: 100%;
+        height: auto;
     }
 }
 
