@@ -195,17 +195,14 @@ a {
     height: 20vh;
 }
 
-a.footer-main-page {
-    color: black;
-}
-
-a.footer-about-page {
-    color: black;
-}
-
+/* Change footer link color to black */
+a.footer-main-page,
+a.footer-privacy-page,
+a.footer-about-page,
 .credit {
     color: black;
 }
+
 
 .footer-link {
     color: black;
@@ -290,4 +287,5 @@ a.footer-about-page {
     .mobile-product-container {
         display: none;
     }
+
 }

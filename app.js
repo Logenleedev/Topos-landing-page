@@ -30,6 +30,11 @@ app.get('/About',(req,res)=>{
     res.sendFile('./src/views/About.html',  { root: __dirname });
 })
 
+//Privacy Policy GET
+app.get('/Privacy-policy',(req,res)=>{
+    res.sendFile('./src/views/Privacy.html',  { root: __dirname });
+})
+
 
 app.listen(port, function(){
     console.log('Server Started on Port 8000')
