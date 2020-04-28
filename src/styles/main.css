@@ -6,61 +6,133 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
+
 
 /*the start of my code edit*/
 
-/*Nav bar*/
+
+/* (Web) navigation bar */
+
 #web-menu {
     position: fixed;
     margin-top: 0px;
@@ -68,7 +140,9 @@ a {
     right: 0px;
 }
 
-/*Banner image*/
+
+/* (Web) Banner image in the main page */
+
 .banner {
     display: flex;
     position: static;
@@ -80,20 +154,23 @@ a {
     margin-top: 0px;
 }
 
-.banner-content {
+.banner__content {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
 }
 
-.banner-heaeder {
-    font-family: 'Lacquer', sans-serif;
-    color: white;
-    font-size: 50px;
+
+/* (Web) Product Introduction */
+
+
+/* (Web) Row 1 */
+
+#Section-One-Container {
+    padding: 20% 10% 20% 20%;
 }
 
-/*Product introduction*/
-#Section-One-Container-text{
+#Section-One-Container-text {
     padding: 3%;
     display: flex;
     align-items: center;
@@ -105,14 +182,16 @@ a {
     color: black;
     width: 100%;
     padding: 20% 10% 20% 20%;
-
 }
 
-#Section-One-Container {
-    padding: 20% 10% 20% 20%;
+
+/* (Web) Row 2 */
+
+#Section-Two-Container {
+    padding: 10% 10% 10% 20%;
 }
 
-#Section-Two-Container-text{
+#Section-Two-Container-text {
     padding: 3%;
     display: flex;
     align-items: center;
@@ -124,15 +203,16 @@ a {
     color: black;
     width: 100%;
     padding: 0 10% 20% 20%;
-
 }
 
-#Section-Two-Container {
+
+/* (Web) Row 3 */
+
+#Section-Three-Container {
     padding: 10% 10% 10% 20%;
 }
 
-
-#Section-Three-Container-text{
+#Section-Three-Container-text {
     padding: 3%;
     display: flex;
     align-items: center;
@@ -144,20 +224,15 @@ a {
     color: black;
     width: 100%;
     padding: 0 10% 20% 20%;
-
-}
-
-#Section-Three-Container {
-    padding: 10% 10% 10% 20%;
 }
 
 
+/* (Web) Download Link  */
 
-/*Call to Action page*/
-.call-to-action {
-    font-size: 20px;
-    margin: auto;
-    width: 20%;
+.download-description {
+    color: black;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 25px;
 }
 
 .Trigger {
@@ -168,12 +243,6 @@ a {
 
 .Trigger h1 {
     color: white;
-}
-
-.download-description {
-    color: black;
-    font-family: 'ZCOOL KuaiLe', cursive;
-    font-size: 25px;
 }
 
 .Apple-Download {
@@ -187,7 +256,10 @@ a {
 #save-button {
     margin-top: 2%;
 }
+
+
 /*Footer*/
+
 .Footer {
     display: flex;
     justify-content: space-between;
@@ -195,7 +267,9 @@ a {
     height: 20vh;
 }
 
-/* Change footer link color to black */
+
+/* (Web) Footer Link  */
+
 a.footer-main-page,
 a.footer-privacy-page,
 a.footer-about-page,
@@ -203,89 +277,86 @@ a.footer-about-page,
     color: black;
 }
 
-
 .footer-link {
     color: black;
     font-family: 'ZCOOL KuaiLe', cursive;
+    height: 80%;
 }
+
+.footer-link ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
 
 /* Responsive design for mobile device */
 
+
 /* Mobile Side */
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     /* Responsive Menu */
+    /* make the web menu disappear */
     #web-menu {
         display: none;
     }
-
     a.navbar-brand {
         padding-top: 0;
         padding-bottom: 0;
         margin-top: auto;
         margin-bottom: auto;
-    }
-
-    a.navbar-brand {
         width: 9% !important;
         display: inline-block;
         margin-left: 0;
     }
-
+    /* Make the mobile navigation burger menu icon float to the right */
     button.navbar-toggler {
         float: right;
     }
-    
+    /* Set logo for mobile navigation bar */
     img.mobile-logo {
         width: 100%;
     }
-
     .logo-button {
         width: 90%;
         display: inline;
         margin-left: auto;
     }
-
     .web-product-intro {
         display: none;
     }
-
     .banner {
         display: none;
     }
-
     div.mobile-product-container {
         width: 100%;
         padding: 0;
         margin-left: 0;
         margin-right: 0;
-        margin-top:5%;
+        margin-top: 5%;
     }
-
     div.description-container {
         margin: 10%;
         text-align: center;
         font-size: 30px;
     }
-
     #image-container img {
         width: 100%;
         height: auto;
     }
 }
 
+
 /* Web Side */
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
     #mobile-menu {
         display: none;
     }
-
     .logo-button {
         display: inline;
     }
-
     .mobile-download,
     .mobile-product-container {
         display: none;
     }
-
 }
