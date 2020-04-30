@@ -1,1408 +1,973 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html>
 
-<head>
-    <title>Welcom to Topos</title>
-    <!-- Link favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon/favicon.ico" />
-    <!--Insert semantic UI CSS-->
-    <link rel="stylesheet" type="text/css" href="/semantic.min.css" />
-    <!--Bulma-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!--Link main page css style sheet-->
-    <link href="/styles/Privacy.css" rel="stylesheet" />
-    <!--Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <!--Bulma CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-    <!--Font awesome 5-->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <!--Insert Google font - Lacquer-->
-    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet" />
-    <!--Insert Google font - Zcool-->
-    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
-</head>
+    <head>
+        <title>Welcome to Topos</title>
+        <!--CSS file-->
+        <!-- Bulma framework -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- favicon image -->
+        <link rel="shortcut icon" type="image/jpg" href="/image/favicon/favicon.ico" />
+        <!-- Semantic UI CSS framework -->
+        <link rel="stylesheet" href="/semantic.min.css" />
+        <!-- Bootstrap CSS framework -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <!-- Bulma CSS framework -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+        <!--Link main page css style sheet-->
+        <link href="/styles/About.css" rel="stylesheet" />
 
-<body>
-    <!-- navigation bar for mobile -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mobile-menu">
-        <div class="logo-button">
-            <a class="navbar-brand" href="/"><img class="mobile-logo" src="/image/Topos-logo.svg" max-width="40px" width="10%" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">主页<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/About">关于</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Privacy-policy">隐私条款</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">联系我们</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--navigation bar for web-->
-    <div class="ui top fixed menu" id="web-menu">
-        <div class="item">
-            <img src="/image/Topos-logo.svg" width="2.5em" />
-        </div>
-        <a class="item" href="/">主页</a>
-        <a class="item" href="/About">关于</a>
-        <a class="item">联系我们</a>
-    </div>
-    <!-- Privacy Policy Section  -->
+        <!-- Font -->
+        <!-- Google font - Lacquer -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" />
+        <!-- Google font - Zcool -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" />
+        <!-- Google web font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <div class="row" id="Privacy-Policy-Section">
-        <div class="col-3">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-引言" role="tab" aria-controls="v-pills-引言" aria-selected="true">引言</a
-					>
-					<a
-						class="nav-link"
-						id="v-pills-profile-tab"
-						data-toggle="pill"
-						href="#v-pills-如何搜索您的信息"
-						role="tab"
-						aria-controls="v-如何搜索您的信息"
-						aria-selected="false"
-						>一. 我们如何搜集您的信息？</a
-					>
-					<a
-						class="nav-link"
-						id="v-pills-messages-tab"
-						data-toggle="pill"
-						href="#v-pills-如何使用您的信息"
-						role="tab"
-						aria-controls="v-pills-如何使用您的信息"
-						aria-selected="false"
-						>二. 我们如何使用您的信息</a
-					>
-					<a
-						class="nav-link"
-						id="v-pills-settings-tab"
-						data-toggle="pill"
-						href="#v-pills-承诺"
-						role="tab"
-						aria-controls="v-pills-承诺"
-						aria-selected="false"
-						>三. 我们承诺</a
-					>
-					<a
-						class="nav-link"
-						id="v-pills-settings-tab"
-						data-toggle="pill"
-						href="#v-pills-联系我们"
-						role="tab"
-						aria-controls="v-pills-联系我们"
-						aria-selected="false"
-						>四. 如何联系我们</a
-					>
-				</div>
-			</div>
-			<div class="col-9">
-				<div class="tab-content" id="v-pills-tabContent">
-					<!-- 引言 -->
-					<div
-						class="tab-pane fade show active"
-						id="v-pills-引言"
-						role="tabpanel"
-						aria-labelledby="v-pills-引言"
-					>
-						<p class="p1">
-							<span class="s1"><strong>引言</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2">起源创想（北京）科技有限公司（以下简称「</span><span class="s3">Topos</span
-							><span class="s2"
-								>」或「我们」）非常重视您的个人信息，并让您对个人信息拥有控制权，我们会使用强大的加密技术来保护您的隐私，同时制定严格的政策来管理所有数据。当您访问</span
-							><span class="s3">&nbsp;Topos&nbsp;</span
-							><span class="s2"
-								>时，或使用我们提供的服务前，您需要同意本政策中关于我们如何收集、使用、储存和分享您的相关信息的规定。如果您不同意本隐私政策中的任何内容，请立即停止使用或访问我们的产品和服务。本隐私政策要点如下：</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">i.&nbsp;</span
-							><span class="s2"
-								>我们将逐一说明我们收集的您的个人信息类型及其对应的用途，以便您了解我们针对某一特定功能所收集的具体个人信息的类别、使用理由及收集方式。</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s3">ii.&nbsp;</span
-							><span class="s2"
-								>当您使用一些功能时，我们会在获得您的同意后，收集您的一些敏感信息，除非按照相关法律法规要求必须收集，拒绝提供这些信息仅会使您无法使用相关特定功能，但不影响您正常使用</span
-							><span class="s3">Topos</span><span class="s2">的其他功能。</span>
-						</p>
-						<p class="p3">
-							<span class="s3">iii.&nbsp;</span><span class="s2">目前，</span
-							><span class="s3">&nbsp;Topos&nbsp;</span
-							><span class="s2">不会主动共享或转让您的个人信息至</span
-							><span class="s3">&nbsp;Topos&nbsp;</span
-							><span class="s2"
-								>外的第三方，如存在其他共享或转让您的个人信息或您需要我们将您的个人信息共享或转让至</span
-							><span class="s3">&nbsp;Topos&nbsp;</span
-							><span class="s2"
-								>外的第三方情形时，我们会直接或确认第三方征得您对上述行为的明示同意，此外，我们会对对外提供信息的行为进行风险评估。</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s3">iv.&nbsp;</span><span class="s2">目前，</span
-							><span class="s3">&nbsp;Topos</span><span class="s2">不会主动从</span
-							><span class="s3">&nbsp;Topos&nbsp;</span
-							><span class="s2"
-								>外的第三方获取您的个人信息。如未来为业务发展需要从第三方间接获取您的个人信息，我们会在获取前向您明示您个人信息的来源、类型及使用范围，如</span
-							><span class="s3">&nbsp;Topos</span
-							><span class="s2"
-								>开展业务需进行的个人信息处理活动超出您原本向第三方提供个人信息时的授权同意范围，我们将在处理您的该等个人信息前，征得您的明示同意；此外，我们也将会严格遵守相关法律法规的规定，并要求第三方保障其提供的信息的合法性。</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s3">v.&nbsp;</span
-							><span class="s2"
-								>您可以通过本指引所列途径访问、更正、删除您的个人信息，也可以撤回同意、注销帐号、投诉举报以及设置隐私功能。</span
-							>
-						</p>
-						<p class="p3"><span class="s2">如您想了解更加详尽的信息，请根据以下索引阅读相应章节：</span></p>
-						<p class="p3">
-							<span class="s3">1.&nbsp;</span><span class="s2">我们如何搜集和使用您的信息</span>
-						</p>
-						<p class="p4">
-							<span class="s2">2.&nbsp;</span><span class="s1">我们如何使用</span
-							><span class="s2">&nbsp;Cookie&nbsp;</span><span class="s1">和同类技术</span>
-						</p>
-						<p class="p3">
-							<span class="s3">3.&nbsp;</span><span class="s2">如何更新、变更、导出、删除您的信息</span>
-						</p>
-						<p class="p3">
-							<span class="s3">4.&nbsp;</span><span class="s2">我们如何保护您的个人信息</span>
-						</p>
-						<p class="p3">
-							<span class="s3">5.&nbsp;</span><span class="s2">我们如何处理未成年人提供的个人信息</span>
-						</p>
-						<p class="p3">
-							<span class="s3">6.&nbsp;</span
-							><span class="s2">我们如何共享、转让、公开披露您的个人信息</span>
-						</p>
-						<p class="p3"><span class="s3">7.&nbsp;</span><span class="s2">信息的存储</span></p>
-						<p class="p3"><span class="s3">8.&nbsp;</span><span class="s2">第三方服务提供商</span></p>
-						<p class="p3"><span class="s3">9.&nbsp;</span><span class="s2">本政策的更新</span></p>
-						<p class="p4"><span class="s2">10.&nbsp;</span><span class="s1">适用范围</span></p>
-						<p class="p3"><span class="s3">11.&nbsp;</span><span class="s2">如何联系我们</span></p>
-						<p class="p2">
-							<br />
-						</p>
-					</div>
-					<!-- 一. 我们如何搜索您的信息? -->
-					<div
-						class="tab-pane fade"
-						id="v-pills-如何搜索您的信息"
-						role="tabpanel"
-						aria-labelledby="v-如何搜索您的信息"
-					>
-						<p class="p1">
-							<span class="s1"><strong>一</strong></span
-							><span class="s3"><strong>.&nbsp;</strong></span
-							><span class="s1"><strong>我们如何搜集和使用您的信息？</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p1">
-							<span class="s3"><strong>1.&nbsp;</strong></span
-							><span class="s1"><strong>我们如何搜集您的信息？</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3"><span class="s2">我们提供服务时，可能会收集、储存和使用下列信息：</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p1">
-							<span class="s3"><strong>1.1&nbsp;</strong></span
-							><span class="s1"><strong>您提供的信息</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">1.1.1&nbsp;</span
-							><span class="s2"
-								>您在注册账户或使用我们的服务时，向我们提供的可用于识别用户的个人身份的信息，例如姓名、电子邮件地址、电话号码、银行卡号、身份证号码、住址、通讯记录等信息，或我们可以正当地通过链接找到此类信息的其他数据。如果您想充分使用我们提供的各种分享功能，可能还需要创建公开显示的个人资料，其中可能会包含您的姓名和照片。</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s3">1.1.2&nbsp;</span
-							><span class="s2"
-								>您通过我们的服务向其他方提供的共享信息，以及您使用我们的服务时上传、提交、存储、发送或接收的信息。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p1">
-							<span class="s3"><strong>1.2&nbsp;</strong></span
-							><span class="s1"><strong>您在使用服务过程中，我们获取的信息</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2">我们会收集您使用的服务以及使用方式的信息，如您使用</span
-							><span class="s3">&nbsp; Topos&nbsp;</span
-							><span class="s2">在社区发表评论、弹幕或参与话题活动。此类信息包括：</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">1.2.1&nbsp;</span><span class="s2">设备信息：我们会根据您在软件安装及</span
-							><span class="s3">/</span
-							><span class="s2"
-								>或使用授权的具体权限，接收并记录您所使用的设备相关信息，例如您的设备型号、操作系统版本信息、设备设置、移动设备版本、设备识别码、屏幕分表率、设备环境等软硬件特征信息、设备所在位置相关信息，例如</span
-							><span class="s3">IP</span><span class="s2">地址、</span><span class="s3">GPS</span
-							><span class="s2">位置以及能够提供相关信息的</span><span class="s3">WLAN</span
-							><span class="s2">接入点、蓝牙和基站等传感器信息。如果您在安装及</span
-							><span class="s3">/</span
-							><span class="s2"
-								>或使用过程中拒绝授予我们相应权限的，我们并不会记录您上述对应的信息。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.2&nbsp;</span><span class="s1">日志信息</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">A.&nbsp;</span
-							><span class="s2"
-								>设备或软件信息，例如您的移动设备、网页浏览器或用于接入我们服务的其他程序所提供的配置信息、您的</span
-							><span class="s3">IP</span><span class="s2">地址和移动设备所用的版本和设备识别码；</span>
-						</p>
-						<p class="p3">
-							<span class="s3">B.&nbsp;</span
-							><span class="s2"
-								>在使用我们服务时搜索或浏览的信息，例如您使用的网页搜索词语、访问的社交媒体页面</span
-							><span class="s3">URL</span
-							><span class="s2">地址，以及您在使用我们服务时浏览或要求提供的其他信息和内容详情；</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.3 IP</span><span class="s1">地址</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">A.&nbsp;</span><span class="s2">有关您曾使用的移动应用（</span
-							><span class="s3">APP</span
-							><span class="s2">）和其他软件的信息，以及您曾经使用该等移动应用和软件的信息；</span>
-						</p>
-						<p class="p3">
-							<span class="s3">B.&nbsp;</span
-							><span class="s2"
-								>您通过我们的服务进行通讯的信息，例如曾通讯的账号，以及通讯时间、数据和时长；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s3">C.&nbsp;</span
-							><span class="s2"
-								>您通过我们的服务分享的内容所包含的信息（元数据），例如拍摄或上传的共享照片或录像的日期、时间或地点等。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">1.2.4&nbsp;</span><span class="s2">设备中的视频、图片、游戏软件等</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>我们的客户端会将您主动上传的视频、图片加密上传到服务器进行存储；可能会提取您设备中的软件名、版本号，通过加密上传到服务器进行处理、存储。同时，您也可以随时通过相关功能设置拒绝</span
-							><span class="s3">/</span
-							><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span
-							><span class="s3">&nbsp;Topos</span
-							><span class="s2"
-								>其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的存储或处理。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">1.2.5&nbsp;</span><span class="s2">扫描二维码、拍摄照片、拍摄视频</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>当您使用扫描二维码、拍摄照片、拍摄视频功能时，我们将访问您的设备相机相关权限，并收集您提供的基于扫描二维码、拍摄照片后向我们上传的图片、视频信息。如您拒绝提供权限和内容的，仅会使您无法使用该功能，但并不影响您正常使用</span
-							><span class="s3">Topos</span
-							><span class="s2"
-								>的其他功能。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.6&nbsp;</span><span class="s1">位置信息</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>您可以授权开启设备定位功能并使用我们基于位置提供的相关服务，当然，您也可以通过关闭定位功能随时停止我们对您的地理位置信息的收集。您可以允许我们访问您的活动与体能训练记录，通过读取您的活动与体能训练，记录步频和步数信息。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.7&nbsp;</span><span class="s1">通讯录</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2">如您想跟踪了解自己朋友们使用</span><span class="s3">Topos</span
-							><span class="s2">的情况，可以申请使用</span><span class="s3">Topos&nbsp;</span
-							><span class="s2"
-								>相关功能，我们将根据您的授权上传并保存您的应用列表，并以加密方式上传并保存用户通讯录中联系人手机号码，通过与服务器中信息匹配为您提供特色服务。同时，您也可以随时通过相关功能设置拒绝</span
-							><span class="s3">/</span
-							><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span
-							><span class="s3">&nbsp;Topos</span
-							><span class="s2"
-								>其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.8&nbsp;</span><span class="s1">麦克风和录音</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>当您使用录制视频功能时我们将访问您的设备麦克风和录音相关权限，我们需要收集您的语音信息、语音交互信息。如您拒绝提供的，仅会使您无法使用该功能，但并不影响您正常使用</span
-							><span class="s3">&nbsp;Topos</span
-							><span class="s2"
-								>的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.9&nbsp;</span><span class="s1">交易信息</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>在您使用该功能的过程中可能会需要进行支付，在支付过程中，我们可能会收集您的第三方支付账号（例如银联账号）。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.10&nbsp;</span><span class="s1">蓝牙</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>若您已有相关硬件设备，希望将硬件产品记录的信息（包括但不限于心率、睡眠信息、步数、运动数据、体重、</span
-							><span class="s3">BMI</span
-							><span class="s2">、等已同意上传的个人信息及个人身体数据）同步至手机端</span
-							><span class="s3">,&nbsp;</span
-							><span class="s2"
-								>则可以通过开启蓝牙功能实现。如您拒绝开启的，仅会使您无法使用该功能，但并不影响您正常使用</span
-							><span class="s3">&nbsp;Topos</span
-							><span class="s2"
-								>的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3"><span class="s3">1.2.11&nbsp;</span><span class="s2">来源于第三方的信息</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2">在一些法律允许的情况下，我们可能从第三方处获得您的个人信息。例如：</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">*&nbsp;</span
-							><span class="s2"
-								>出于安全和防欺诈的目的，针对特定账号、金融交易等服务，在您授权的前提下，通过合法来源核实您的信息（如电话号码）；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s3">*&nbsp;</span
-							><span class="s2">通过指定的唯一标识符（如从广告主处获得的</span><span class="s3">IMEI</span
-							><span class="s2">编号）为您对应提供广告服务；</span>
-						</p>
-						<p class="p3">
-							<span class="s3">*&nbsp;</span
-							><span class="s2"
-								>我们还可能从第三方社交网络服务中获取某些信息，例如账户、昵称（例如，当您使用社交网络账户登录</span
-							><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">服务时）；</span>
-						</p>
-						<p class="p3">
-							<span class="s3">*&nbsp;</span
-							><span class="s2">他人提供的与您有关的信息，例如其他用户在使用</span
-							><span class="s3">&nbsp;Topos</span><span class="s2">商城时填写的您的收货地址。</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4"><span class="s2">1.2.12&nbsp;</span><span class="s1">非个人信息</span></p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>我们还可能收集其他无法识别到特定个人、根据当地适用法律不属于个人信息的信息，例如您使用特定服务时产生的统计类数据，如匿名设备相关信息、日活事件、页面访问事件、页面访问时长事件、会话事件；网络监控数据如请求时长、请求与错误请求数等；以及应用崩溃事件。收集此类信息的目的在于改善我们向您提供的服务。所收集信息的类别和数量取决于您如何使用我们产品或服务。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2"
-								>我们会收集诸如唯一设备标识符、设备型号、系统版本号等与您在我们的网站或移动应用中的活动有关的信息。我们会将此类信息汇总，用于帮助我们向客户提供更有用的信息，了解客户对我们网站、产品或服务中的哪些部分最感兴趣。就本隐私政策而言，汇总数据被视为非个人信息。如果我们将非个人信息与个人信息结合使用，则在结合使用期间，此类信息将被视为个人信息。</span
-							>
-						</p>
-					</div>
-					<!-- 二. 我们如何使用您的信息 -->
-					<div
-						class="tab-pane fade"
-						id="v-pills-如何使用您的信息"
-						role="tabpanel"
-						aria-labelledby="v-pills-如何使用您的信息"
-					>
-						<p class="p1">
-							<span class="s1"><strong>二</strong></span
-							><span class="s2"><strong>.&nbsp;</strong></span
-							><span class="s1"><strong>我们如何使用您的信息</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3"
-								>收集个人信息的目的在于向您提供产品或服务，并且保证我们遵守适用的相关法律、法规及其他规范性文件。我们可能将上述收集的信息用作以下用途：</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2">2.1&nbsp;</span
-							><span class="s3">向您提供、处理、维护、改善、开发我们的产品或提供给您的服务，</span
-							><span class="s2">&nbsp;</span
-							><span class="s3">例如交付、验证、售后、客户支持和广告宣传；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.2&nbsp;</span
-							><span class="s3"
-								>在我们提供服务时，用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途，确保我们向您提供的产品和服务的安全性；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s2">2.3&nbsp;</span
-							><span class="s3"
-								>内部目的，如数据分析、研究和开发与我们产品或服务的使用相关的统计信息，以更好地改进我们的产品或服务；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s2">2.4&nbsp;</span
-							><span class="s3">帮助我们设计新服务，改善我们现有服务；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.5&nbsp;</span
-							><span class="s3"
-								>使我们更加了解您如何接入和使用我们的服务，从而针对性地回应您的个性化需求，例如语言设定、位置设定、个性化的帮助服务和指示，或对您和其他用户作出其他方面的回应；若您对社区展示内容不感兴趣则可通过「长按内容」后点击「不感兴趣」的方式关闭该条内容，同时您可通过「我」</span
-							><span class="s2">-</span><span class="s3">「设置」</span><span class="s2">-</span
-							><span class="s3">「隐私」</span><span class="s2">-</span
-							><span class="s3"
-								>「个性化推荐」自行决定将社区个性化推荐及课程个性化推荐开启或关闭；也可通过「我」</span
-							><span class="s2">-</span><span class="s3">「设置」</span><span class="s2">-</span
-							><span class="s3">「消息提醒」</span><span class="s2">-</span
-							><span class="s3">「系统通知」自行决定是否接受推送消息。</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.6&nbsp;</span
-							><span class="s3">向您提供与您更加相关的推广活动，您可根据喜好自行决定开启或关闭；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.7&nbsp;</span
-							><span class="s3">评估我们服务中的广告和其他促销及推广活动的效果，并加以改善；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.8&nbsp;</span><span class="s3">执行软件验证、升级服务；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.9&nbsp;</span
-							><span class="s3"
-								>应用户特殊要求而提供特定服务时，需要将信息提供给我们的关联公司、第三方或其他用户；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s2">2.10&nbsp;</span
-							><span class="s3">其他不违反任何强制性法律法规的情况；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.11&nbsp;</span><span class="s3">让您参与有关我们产品和服务的调查；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.12&nbsp;</span
-							><span class="s3">储存并维护与您相关的信息，用于我们的业务运营</span
-							><span class="s2">&nbsp;</span><span class="s3">（例如业务统计）或履行法律义务；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">2.13&nbsp;</span><span class="s3">其他征得您同意的目的。</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3"
-								>关于我们如何使用您的信息（其中可能包含个人信息），下面提供了更多详细示例：</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">登录使用</span
-							><span class="s2">&nbsp;Topos</span><span class="s3">产品或服务；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">创建及维护您的</span
-							><span class="s2">&nbsp;Topos</span><span class="s3">账号。</span
-							><span class="s2">&nbsp;</span><span class="s3">您通过网站或移动设备创建</span
-							><span class="s2">&nbsp;Topos</span
-							><span class="s3">账号时提供的个人信息可用于建立您个人</span
-							><span class="s2">&nbsp;Topos</span><span class="s3">账号和个人资料；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">处理您的订购单。</span
-							><span class="s2">&nbsp;</span
-							><span class="s3"
-								>与电子商务订单相关的信息可用于处理订购单和相关的售后服务，包括客户支持和重新发货。此外，订单号将用于校验物流合作伙伴的订单和包裹的实际交付。收件人信息，包括姓名、地址、电话号码和邮政编码，将用于送货。购买物品的清单用于打印发票，并使您能够确定包裹中的物品；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">参与社区。</span
-							><span class="s2">&nbsp;</span><span class="s3">与社区或</span><span class="s2">Topos</span
-							><span class="s3"
-								>其他类似社交平台有关的个人信息可能被用于个人资料页面展示、与其他用户进行互动、参与论坛；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">提供基于位置的服务。</span
-							><span class="s2">&nbsp;</span><span class="s3">在使用</span
-							><span class="s2">Topos&nbsp;</span
-							><span class="s3">服务时，我们或第三方服务提供商与业务合作伙伴（更多详细信息请参阅下方</span
-							><span class="s2">&ldquo;</span
-							><span class="s3">我们如何共享，转移和公开披露您的个人信息</span
-							><span class="s2">&rdquo;</span
-							><span class="s3"
-								>）可能会使用位置信息以便为您提供服务，并且基于准确的位置提供更好的用户体验，例如获取准确的跑步轨迹，您可以随时在设置中关闭</span
-							><span class="s2">&nbsp;Topos&nbsp;</span><span class="s3">位置服务；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">改善用户体验。</span
-							><span class="s2">&nbsp;</span
-							><span class="s3">某些选择性加入功能，例如用户体验计划，允许我们分析用户如何使用手机和</span
-							><span class="s2">&nbsp;Topos&nbsp;</span
-							><span class="s3">服务的数据，以改善用户体验，例如发送崩溃报告；</span>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">收集用户反馈<strong>。</strong></span
-							><span class="s2">&nbsp;</span><span class="s3">您选择提供的反馈对帮助</span
-							><span class="s2">&nbsp;Topos&nbsp;</span
-							><span class="s3">改进服务非常重要。为了处理您提供的反馈，</span
-							><span class="s2">&nbsp;Topos</span
-							><span class="s3"
-								>可能会使用您所提供的个人信息与您联系，并保留记录用于解决问题及改进服务；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span><span class="s3">发送通知<strong>。</strong></span
-							><span class="s2">&nbsp;</span
-							><span class="s3"
-								>我们可能会将您的个人信息用于发送重要通知，例如有关订单的通知和我们的条款、条件和政策的变更。由于此类信息对您和我们之间的沟通至关重要，不建议您拒绝接收此类信息；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s2">*&nbsp;</span
-							><span class="s3">进行设备的分析以提供更好的用户体验<strong>。</strong></span
-							><span class="s2">&nbsp; Topos</span
-							><span class="s3">将会进行硬件及软件的分析，以进一步提升设备的使用体验。</span>
-						</p>
-						<p class="p3">
-							<span class="s3"
-								>我们可能将这些信息与其他信息结合起来（包括跨不同服务或设备如电脑、手机、智能硬件和其他联网设备中的信息），用于提供和改进我们的产品、服务、内容和广告宣传。例如，我们可能会在所有需要</span
-							><span class="s2">&nbsp;Topos</span><span class="s3">账号的服务中使用您</span
-							><span class="s2">&nbsp;Topos</span
-							><span class="s3"
-								>账号的详细信息。同时，为了让您有更好的体验以及改善我们的服务，在符合相关法律法规规定或经您同意时，我们可能会将来自您或与您相关的不同产品、服务或设备的信息整理成标签，来提供建议、定制内容和个性化功能。根据</span
-							><span class="s2">&nbsp;</span
-							><span class="s3"
-								>我们合并信息的原因以及适用法律的要求，我们将为您提供此类整合的具体控制机制。您有权拒绝以直接营销目的进行的个人信息处理以及自动化决策等。为了行使上述权利，您可通过「我」</span
-							><span class="s2">-</span><span class="s3">「设置」</span><span class="s2">-</span
-							><span class="s3">「隐私」</span><span class="s2">-</span
-							><span class="s3">「个性化推荐」</span><span class="s2">-&nbsp;</span
-							><span class="s3">关闭开关，或者参考各产品或服务的单独隐私政策中说明的控制机制。</span>
-						</p>
-					</div>
-					<!-- 三. 我们承诺 -->
-					<div class="tab-pane fade" id="v-pills-承诺" role="tabpanel" aria-labelledby="v-pills-承诺">
-						<p class="p1">
-							<span class="s1"><strong>三.&nbsp;</strong></span
-							><span class="s2"><strong>我们承诺</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s1">3.1&nbsp;</span
-							><span class="s3"
-								>我们不会根据敏感类别（例如种族、宗教、性取向或健康状况）向您展示个性化广告；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s1">3.2&nbsp;</span
-							><span class="s3"
-								>我们不会与广告主分享可用于识别您个人身份的信息，例如您的姓名或电子邮件地址（除非经您授权同意）；</span
-							>
-						</p>
-						<p class="p3">
-							<span class="s1">3.3&nbsp;</span
-							><span class="s3"
-								>在任何时候、任何情况下都不会向任何第三方出售您的个人信息，我们只会在法律允许的范围内使用根据本协议获得的信息。我们会制定严格的政策保护您的个人信息，除非事先获得您的授权或本声明另有规定之外，不会将您的这些信息对外公开或向第三方提供。</span
-							>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4">
-							<span class="s1">4.&nbsp;</span
-							><span class="s3"
-								>为保证服务质量，我们可能会由关联公司或其他可信合作单位向您提供您所要求的服务或您可能感兴趣的内容。经您授权同意后，我们将向关联公司或合作单位分享该产品、服务所必须的个人信息。我们会要求关联公司及合作单位按照我们的说明、隐私政策以及任何其他适当的保密和安全措施来保证您的个人信息安全。除此之外，未经您的授权同意，我们不会向任何第三方提供或分享您的信息。</span
-							>
-						</p>
-						<p class="p5">
-							<br />
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s1">5.&nbsp;Topos</span
-							><span class="s3">服务中的第三方服务由外部第三方主体提供，</span
-							><span class="s1">Topos</span
-							><span class="s3"
-								>无法获得您在使用该类第三方服务时产生的信息。但是，如果您已明示同意该第三方获得您的地理位置信息，该第三方将通过</span
-							><span class="s1">Topos</span
-							><span class="s3"
-								>接口获得您的终端地理位置信息。该信息属于敏感信息，拒绝提供该信息仅会使您无法使用上述第三方服务，但不影响您正常使用</span
-							><span class="s1">Topos</span><span class="s3">的功能。</span>
-						</p>
-					</div>
-					<!-- 四. 如何联系我们 -->
-					<div class="tab-pane fade" id="v-pills-联系我们" role="tabpanel" aria-labelledby="v-pills-联系我们">
-						<p class="p1">
-							<span class="s1"><strong>四. 如何联系我们</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p1">
-							<span class="s1"><strong>您可通过以下方式与我们联系：</strong></span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">1.&nbsp;</span
-							><span class="s2">如对本政策内容有任何疑问、意见或建议，您可通过</span
-							><span class="s3">Topos</span><span class="s2">在线客服与我们联系；</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p3">
-							<span class="s3">2.&nbsp;</span
-							><span class="s2">如果发现个人信息可能被泄露，您可以通过</span
-							><span class="s3">&nbsp;Topos</span><span class="s2">投诉举报，我们将在</span
-							><span class="s3">15</span><span class="s2">个工作日内联络您并完成核查和处理；</span>
-						</p>
-						<p class="p2">
-							<br />
-						</p>
-						<p class="p4">
-							<span class="s2">3.&nbsp;</span><span class="s1">我们还设立了意见、建议反馈邮箱</span
-							><span class="s2">: aego@muo.xyz/ jiatong.li@muo.xyz/</span>
-						</p>
-						<p class="p3">
-							<span class="s2">与我们联系，我们将在</span><span class="s3">15</span
-							><span class="s2">个工作日内联络您并完成核查和处理。</span>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Privacy Policy for mobile device -->
-		<div id="Mobile-Privacy-Policy-Section">
-			<p class="p1">
-				<span class="s1"><strong>引言</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2">起源创想（北京）科技有限公司（以下简称「</span><span class="s3">Topos</span
-				><span class="s2"
-					>」或「我们」）非常重视您的个人信息，并让您对个人信息拥有控制权，我们会使用强大的加密技术来保护您的隐私，同时制定严格的政策来管理所有数据。当您访问</span
-				><span class="s3">&nbsp;Topos&nbsp;</span
-				><span class="s2"
-					>时，或使用我们提供的服务前，您需要同意本政策中关于我们如何收集、使用、储存和分享您的相关信息的规定。如果您不同意本隐私政策中的任何内容，请立即停止使用或访问我们的产品和服务。本隐私政策要点如下：</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">i.&nbsp;</span
-				><span class="s2"
-					>我们将逐一说明我们收集的您的个人信息类型及其对应的用途，以便您了解我们针对某一特定功能所收集的具体个人信息的类别、使用理由及收集方式。</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">ii.&nbsp;</span
-				><span class="s2"
-					>当您使用一些功能时，我们会在获得您的同意后，收集您的一些敏感信息，除非按照相关法律法规要求必须收集，拒绝提供这些信息仅会使您无法使用相关特定功能，但不影响您正常使用</span
-				><span class="s3">Topos</span><span class="s2">的其他功能。</span>
-			</p>
-			<p class="p3">
-				<span class="s3">iii.&nbsp;</span><span class="s2">目前，</span><span class="s3">&nbsp;Topos&nbsp;</span
-				><span class="s2">不会主动共享或转让您的个人信息至</span><span class="s3">&nbsp;Topos&nbsp;</span
-				><span class="s2"
-					>外的第三方，如存在其他共享或转让您的个人信息或您需要我们将您的个人信息共享或转让至</span
-				><span class="s3">&nbsp;Topos&nbsp;</span
-				><span class="s2"
-					>外的第三方情形时，我们会直接或确认第三方征得您对上述行为的明示同意，此外，我们会对对外提供信息的行为进行风险评估。</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">iv.&nbsp;</span><span class="s2">目前，</span><span class="s3">&nbsp;Topos</span
-				><span class="s2">不会主动从</span><span class="s3">&nbsp;Topos&nbsp;</span
-				><span class="s2"
-					>外的第三方获取您的个人信息。如未来为业务发展需要从第三方间接获取您的个人信息，我们会在获取前向您明示您个人信息的来源、类型及使用范围，如</span
-				><span class="s3">&nbsp;Topos</span
-				><span class="s2"
-					>开展业务需进行的个人信息处理活动超出您原本向第三方提供个人信息时的授权同意范围，我们将在处理您的该等个人信息前，征得您的明示同意；此外，我们也将会严格遵守相关法律法规的规定，并要求第三方保障其提供的信息的合法性。</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">v.&nbsp;</span
-				><span class="s2"
-					>您可以通过本指引所列途径访问、更正、删除您的个人信息，也可以撤回同意、注销帐号、投诉举报以及设置隐私功能。</span
-				>
-			</p>
-			<p class="p3"><span class="s2">如您想了解更加详尽的信息，请根据以下索引阅读相应章节：</span></p>
-			<p class="p3"><span class="s3">1.&nbsp;</span><span class="s2">我们如何搜集和使用您的信息</span></p>
-			<p class="p4">
-				<span class="s2">2.&nbsp;</span><span class="s1">我们如何使用</span
-				><span class="s2">&nbsp;Cookie&nbsp;</span><span class="s1">和同类技术</span>
-			</p>
-			<p class="p3"><span class="s3">3.&nbsp;</span><span class="s2">如何更新、变更、导出、删除您的信息</span></p>
-			<p class="p3"><span class="s3">4.&nbsp;</span><span class="s2">我们如何保护您的个人信息</span></p>
-			<p class="p3"><span class="s3">5.&nbsp;</span><span class="s2">我们如何处理未成年人提供的个人信息</span></p>
-			<p class="p3">
-				<span class="s3">6.&nbsp;</span><span class="s2">我们如何共享、转让、公开披露您的个人信息</span>
-			</p>
-			<p class="p3"><span class="s3">7.&nbsp;</span><span class="s2">信息的存储</span></p>
-			<p class="p3"><span class="s3">8.&nbsp;</span><span class="s2">第三方服务提供商</span></p>
-			<p class="p3"><span class="s3">9.&nbsp;</span><span class="s2">本政策的更新</span></p>
-			<p class="p4"><span class="s2">10.&nbsp;</span><span class="s1">适用范围</span></p>
-			<p class="p3"><span class="s3">11.&nbsp;</span><span class="s2">如何联系我们</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s1"><strong>一</strong></span
-				><span class="s3"><strong>.&nbsp;</strong></span
-				><span class="s1"><strong>我们如何搜集和使用您的信息？</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s3"><strong>1.&nbsp;</strong></span
-				><span class="s1"><strong>我们如何搜集您的信息？</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3"><span class="s2">我们提供服务时，可能会收集、储存和使用下列信息：</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s3"><strong>1.1&nbsp;</strong></span
-				><span class="s1"><strong>您提供的信息</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">1.1.1&nbsp;</span
-				><span class="s2"
-					>您在注册账户或使用我们的服务时，向我们提供的可用于识别用户的个人身份的信息，例如姓名、电子邮件地址、电话号码、银行卡号、身份证号码、住址、通讯记录等信息，或我们可以正当地通过链接找到此类信息的其他数据。如果您想充分使用我们提供的各种分享功能，可能还需要创建公开显示的个人资料，其中可能会包含您的姓名和照片。</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">1.1.2&nbsp;</span
-				><span class="s2"
-					>您通过我们的服务向其他方提供的共享信息，以及您使用我们的服务时上传、提交、存储、发送或接收的信息。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s3"><strong>1.2&nbsp;</strong></span
-				><span class="s1"><strong>您在使用服务过程中，我们获取的信息</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2">我们会收集您使用的服务以及使用方式的信息，如您使用</span
-				><span class="s3">&nbsp; Topos&nbsp;</span
-				><span class="s2">在社区发表评论、弹幕或参与话题活动。此类信息包括：</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">1.2.1&nbsp;</span><span class="s2">设备信息：我们会根据您在软件安装及</span
-				><span class="s3">/</span
-				><span class="s2"
-					>或使用授权的具体权限，接收并记录您所使用的设备相关信息，例如您的设备型号、操作系统版本信息、设备设置、移动设备版本、设备识别码、屏幕分表率、设备环境等软硬件特征信息、设备所在位置相关信息，例如</span
-				><span class="s3">IP</span><span class="s2">地址、</span><span class="s3">GPS</span
-				><span class="s2">位置以及能够提供相关信息的</span><span class="s3">WLAN</span
-				><span class="s2">接入点、蓝牙和基站等传感器信息。如果您在安装及</span><span class="s3">/</span
-				><span class="s2">或使用过程中拒绝授予我们相应权限的，我们并不会记录您上述对应的信息。</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.2&nbsp;</span><span class="s1">日志信息</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">A.&nbsp;</span
-				><span class="s2"
-					>设备或软件信息，例如您的移动设备、网页浏览器或用于接入我们服务的其他程序所提供的配置信息、您的</span
-				><span class="s3">IP</span><span class="s2">地址和移动设备所用的版本和设备识别码；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">B.&nbsp;</span
-				><span class="s2">在使用我们服务时搜索或浏览的信息，例如您使用的网页搜索词语、访问的社交媒体页面</span
-				><span class="s3">URL</span
-				><span class="s2">地址，以及您在使用我们服务时浏览或要求提供的其他信息和内容详情；</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.3 IP</span><span class="s1">地址</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">A.&nbsp;</span><span class="s2">有关您曾使用的移动应用（</span
-				><span class="s3">APP</span
-				><span class="s2">）和其他软件的信息，以及您曾经使用该等移动应用和软件的信息；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">B.&nbsp;</span
-				><span class="s2">您通过我们的服务进行通讯的信息，例如曾通讯的账号，以及通讯时间、数据和时长；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">C.&nbsp;</span
-				><span class="s2"
-					>您通过我们的服务分享的内容所包含的信息（元数据），例如拍摄或上传的共享照片或录像的日期、时间或地点等。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3"><span class="s3">1.2.4&nbsp;</span><span class="s2">设备中的视频、图片、游戏软件等</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>我们的客户端会将您主动上传的视频、图片加密上传到服务器进行存储；可能会提取您设备中的软件名、版本号，通过加密上传到服务器进行处理、存储。同时，您也可以随时通过相关功能设置拒绝</span
-				><span class="s3">/</span
-				><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span
-				><span class="s3">&nbsp;Topos</span
-				><span class="s2"
-					>其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的存储或处理。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3"><span class="s3">1.2.5&nbsp;</span><span class="s2">扫描二维码、拍摄照片、拍摄视频</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>当您使用扫描二维码、拍摄照片、拍摄视频功能时，我们将访问您的设备相机相关权限，并收集您提供的基于扫描二维码、拍摄照片后向我们上传的图片、视频信息。如您拒绝提供权限和内容的，仅会使您无法使用该功能，但并不影响您正常使用</span
-				><span class="s3">Topos</span
-				><span class="s2"
-					>的其他功能。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.6&nbsp;</span><span class="s1">位置信息</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>您可以授权开启设备定位功能并使用我们基于位置提供的相关服务，当然，您也可以通过关闭定位功能随时停止我们对您的地理位置信息的收集。您可以允许我们访问您的活动与体能训练记录，通过读取您的活动与体能训练，记录步频和步数信息。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.7&nbsp;</span><span class="s1">通讯录</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2">如您想跟踪了解自己朋友们使用</span><span class="s3">Topos</span
-				><span class="s2">的情况，可以申请使用</span><span class="s3">Topos&nbsp;</span
-				><span class="s2"
-					>相关功能，我们将根据您的授权上传并保存您的应用列表，并以加密方式上传并保存用户通讯录中联系人手机号码，通过与服务器中信息匹配为您提供特色服务。同时，您也可以随时通过相关功能设置拒绝</span
-				><span class="s3">/</span
-				><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span
-				><span class="s3">&nbsp;Topos</span
-				><span class="s2"
-					>其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.8&nbsp;</span><span class="s1">麦克风和录音</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>当您使用录制视频功能时我们将访问您的设备麦克风和录音相关权限，我们需要收集您的语音信息、语音交互信息。如您拒绝提供的，仅会使您无法使用该功能，但并不影响您正常使用</span
-				><span class="s3">&nbsp;Topos</span
-				><span class="s2"
-					>的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.9&nbsp;</span><span class="s1">交易信息</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>在您使用该功能的过程中可能会需要进行支付，在支付过程中，我们可能会收集您的第三方支付账号（例如银联账号）。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.10&nbsp;</span><span class="s1">蓝牙</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>若您已有相关硬件设备，希望将硬件产品记录的信息（包括但不限于心率、睡眠信息、步数、运动数据、体重、</span
-				><span class="s3">BMI</span><span class="s2">、等已同意上传的个人信息及个人身体数据）同步至手机端</span
-				><span class="s3">,&nbsp;</span
-				><span class="s2"
-					>则可以通过开启蓝牙功能实现。如您拒绝开启的，仅会使您无法使用该功能，但并不影响您正常使用</span
-				><span class="s3">&nbsp;Topos</span
-				><span class="s2"
-					>的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3"><span class="s3">1.2.11&nbsp;</span><span class="s2">来源于第三方的信息</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3"><span class="s2">在一些法律允许的情况下，我们可能从第三方处获得您的个人信息。例如：</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span
-				><span class="s2"
-					>出于安全和防欺诈的目的，针对特定账号、金融交易等服务，在您授权的前提下，通过合法来源核实您的信息（如电话号码）；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">通过指定的唯一标识符（如从广告主处获得的</span
-				><span class="s3">IMEI</span><span class="s2">编号）为您对应提供广告服务；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span
-				><span class="s2"
-					>我们还可能从第三方社交网络服务中获取某些信息，例如账户、昵称（例如，当您使用社交网络账户登录</span
-				><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">服务时）；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">他人提供的与您有关的信息，例如其他用户在使用</span
-				><span class="s3">&nbsp;Topos</span><span class="s2">商城时填写的您的收货地址。</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4"><span class="s2">1.2.12&nbsp;</span><span class="s1">非个人信息</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>我们还可能收集其他无法识别到特定个人、根据当地适用法律不属于个人信息的信息，例如您使用特定服务时产生的统计类数据，如匿名设备相关信息、日活事件、页面访问事件、页面访问时长事件、会话事件；网络监控数据如请求时长、请求与错误请求数等；以及应用崩溃事件。收集此类信息的目的在于改善我们向您提供的服务。所收集信息的类别和数量取决于您如何使用我们产品或服务。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>我们会收集诸如唯一设备标识符、设备型号、系统版本号等与您在我们的网站或移动应用中的活动有关的信息。我们会将此类信息汇总，用于帮助我们向客户提供更有用的信息，了解客户对我们网站、产品或服务中的哪些部分最感兴趣。就本隐私政策而言，汇总数据被视为非个人信息。如果我们将非个人信息与个人信息结合使用，则在结合使用期间，此类信息将被视为个人信息。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s3"
-					><strong><span class="Apple-converted-space">&nbsp;</span></strong> </span
-				><span class="s1"><strong>二</strong></span
-				><span class="s3"><strong>.&nbsp;</strong></span
-				><span class="s1"><strong>我们如何使用您的信息</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>收集个人信息的目的在于向您提供产品或服务，并且保证我们遵守适用的相关法律、法规及其他规范性文件。我们可能将上述收集的信息用作以下用途：</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">2.1&nbsp;</span
-				><span class="s2">向您提供、处理、维护、改善、开发我们的产品或提供给您的服务，</span
-				><span class="s3">&nbsp;</span><span class="s2">例如交付、验证、售后、客户支持和广告宣传；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">2.2&nbsp;</span
-				><span class="s2"
-					>在我们提供服务时，用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途，确保我们向您提供的产品和服务的安全性；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">2.3&nbsp;</span
-				><span class="s2"
-					>内部目的，如数据分析、研究和开发与我们产品或服务的使用相关的统计信息，以更好地改进我们的产品或服务；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">2.4&nbsp;</span><span class="s2">帮助我们设计新服务，改善我们现有服务；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">2.5&nbsp;</span
-				><span class="s2"
-					>使我们更加了解您如何接入和使用我们的服务，从而针对性地回应您的个性化需求，例如语言设定、位置设定、个性化的帮助服务和指示，或对您和其他用户作出其他方面的回应；若您对社区展示内容不感兴趣则可通过「长按内容」后点击「不感兴趣」的方式关闭该条内容，同时您可通过「我」</span
-				><span class="s3">-</span><span class="s2">「设置」</span><span class="s3">-</span
-				><span class="s2">「隐私」</span><span class="s3">-</span
-				><span class="s2">「个性化推荐」自行决定将社区个性化推荐及课程个性化推荐开启或关闭；也可通过「我」</span
-				><span class="s3">-</span><span class="s2">「设置」</span><span class="s3">-</span
-				><span class="s2">「消息提醒」</span><span class="s3">-</span
-				><span class="s2">「系统通知」自行决定是否接受推送消息。</span>
-			</p>
-			<p class="p3">
-				<span class="s3">2.6&nbsp;</span
-				><span class="s2">向您提供与您更加相关的推广活动，您可根据喜好自行决定开启或关闭；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">2.7&nbsp;</span
-				><span class="s2">评估我们服务中的广告和其他促销及推广活动的效果，并加以改善；</span>
-			</p>
-			<p class="p3"><span class="s3">2.8&nbsp;</span><span class="s2">执行软件验证、升级服务；</span></p>
-			<p class="p3">
-				<span class="s3">2.9&nbsp;</span
-				><span class="s2"
-					>应用户特殊要求而提供特定服务时，需要将信息提供给我们的关联公司、第三方或其他用户；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">2.10&nbsp;</span><span class="s2">其他不违反任何强制性法律法规的情况；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">2.11&nbsp;</span><span class="s2">让您参与有关我们产品和服务的调查；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">2.12&nbsp;</span><span class="s2">储存并维护与您相关的信息，用于我们的业务运营</span
-				><span class="s3">&nbsp;</span><span class="s2">（例如业务统计）或履行法律义务；</span>
-			</p>
-			<p class="p3"><span class="s3">2.13&nbsp;</span><span class="s2">其他征得您同意的目的。</span></p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s2">关于我们如何使用您的信息（其中可能包含个人信息），下面提供了更多详细示例：</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">登录使用</span><span class="s3">&nbsp;Topos</span
-				><span class="s2">产品或服务；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">创建及维护您的</span><span class="s3">&nbsp;Topos</span
-				><span class="s2">账号。</span><span class="s3">&nbsp;</span
-				><span class="s2">您通过网站或移动设备创建</span><span class="s3">&nbsp;Topos</span
-				><span class="s2">账号时提供的个人信息可用于建立您个人</span><span class="s3">&nbsp;Topos</span
-				><span class="s2">账号和个人资料；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">处理您的订购单。</span><span class="s3">&nbsp;</span
-				><span class="s2"
-					>与电子商务订单相关的信息可用于处理订购单和相关的售后服务，包括客户支持和重新发货。此外，订单号将用于校验物流合作伙伴的订单和包裹的实际交付。收件人信息，包括姓名、地址、电话号码和邮政编码，将用于送货。购买物品的清单用于打印发票，并使您能够确定包裹中的物品；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">参与社区。</span><span class="s3">&nbsp;</span
-				><span class="s2">与社区或</span><span class="s3">Topos</span
-				><span class="s2"
-					>其他类似社交平台有关的个人信息可能被用于个人资料页面展示、与其他用户进行互动、参与论坛；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">提供基于位置的服务。</span><span class="s3">&nbsp;</span
-				><span class="s2">在使用</span><span class="s3">Topos&nbsp;</span
-				><span class="s2">服务时，我们或第三方服务提供商与业务合作伙伴（更多详细信息请参阅下方</span
-				><span class="s3">&ldquo;</span><span class="s2">我们如何共享，转移和公开披露您的个人信息</span
-				><span class="s3">&rdquo;</span
-				><span class="s2"
-					>）可能会使用位置信息以便为您提供服务，并且基于准确的位置提供更好的用户体验，例如获取准确的跑步轨迹，您可以随时在设置中关闭</span
-				><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">位置服务；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">改善用户体验。</span><span class="s3">&nbsp;</span
-				><span class="s2">某些选择性加入功能，例如用户体验计划，允许我们分析用户如何使用手机和</span
-				><span class="s3">&nbsp;Topos&nbsp;</span
-				><span class="s2">服务的数据，以改善用户体验，例如发送崩溃报告；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">收集用户反馈<strong>。</strong></span
-				><span class="s3">&nbsp;</span><span class="s2">您选择提供的反馈对帮助</span
-				><span class="s3">&nbsp;Topos&nbsp;</span
-				><span class="s2">改进服务非常重要。为了处理您提供的反馈，</span><span class="s3">&nbsp;Topos</span
-				><span class="s2">可能会使用您所提供的个人信息与您联系，并保留记录用于解决问题及改进服务；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span><span class="s2">发送通知<strong>。</strong></span
-				><span class="s3">&nbsp;</span
-				><span class="s2"
-					>我们可能会将您的个人信息用于发送重要通知，例如有关订单的通知和我们的条款、条件和政策的变更。由于此类信息对您和我们之间的沟通至关重要，不建议您拒绝接收此类信息；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">*&nbsp;</span
-				><span class="s2">进行设备的分析以提供更好的用户体验<strong>。</strong></span
-				><span class="s3">&nbsp; Topos</span
-				><span class="s2">将会进行硬件及软件的分析，以进一步提升设备的使用体验。</span>
-			</p>
-			<p class="p3">
-				<span class="s2"
-					>我们可能将这些信息与其他信息结合起来（包括跨不同服务或设备如电脑、手机、智能硬件和其他联网设备中的信息），用于提供和改进我们的产品、服务、内容和广告宣传。例如，我们可能会在所有需要</span
-				><span class="s3">&nbsp;Topos</span><span class="s2">账号的服务中使用您</span
-				><span class="s3">&nbsp;Topos</span
-				><span class="s2"
-					>账号的详细信息。同时，为了让您有更好的体验以及改善我们的服务，在符合相关法律法规规定或经您同意时，我们可能会将来自您或与您相关的不同产品、服务或设备的信息整理成标签，来提供建议、定制内容和个性化功能。根据</span
-				><span class="s3">&nbsp;</span
-				><span class="s2"
-					>我们合并信息的原因以及适用法律的要求，我们将为您提供此类整合的具体控制机制。您有权拒绝以直接营销目的进行的个人信息处理以及自动化决策等。为了行使上述权利，您可通过「我」</span
-				><span class="s3">-</span><span class="s2">「设置」</span><span class="s3">-</span
-				><span class="s2">「隐私」</span><span class="s3">-</span><span class="s2">「个性化推荐」</span
-				><span class="s3">-&nbsp;</span
-				><span class="s2">关闭开关，或者参考各产品或服务的单独隐私政策中说明的控制机制。</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s3"><strong>3.&nbsp;</strong></span
-				><span class="s1"><strong>我们承诺</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">3.1&nbsp;</span
-				><span class="s2">我们不会根据敏感类别（例如种族、宗教、性取向或健康状况）向您展示个性化广告；</span>
-			</p>
-			<p class="p3">
-				<span class="s3">3.2&nbsp;</span
-				><span class="s2"
-					>我们不会与广告主分享可用于识别您个人身份的信息，例如您的姓名或电子邮件地址（除非经您授权同意）；</span
-				>
-			</p>
-			<p class="p3">
-				<span class="s3">3.3&nbsp;</span
-				><span class="s2"
-					>在任何时候、任何情况下都不会向任何第三方出售您的个人信息，我们只会在法律允许的范围内使用根据本协议获得的信息。我们会制定严格的政策保护您的个人信息，除非事先获得您的授权或本声明另有规定之外，不会将您的这些信息对外公开或向第三方提供。</span
-				>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p5">
-				<span class="s3">4.&nbsp;</span
-				><span class="s2"
-					>为保证服务质量，我们可能会由关联公司或其他可信合作单位向您提供您所要求的服务或您可能感兴趣的内容。经您授权同意后，我们将向关联公司或合作单位分享该产品、服务所必须的个人信息。我们会要求关联公司及合作单位按照我们的说明、隐私政策以及任何其他适当的保密和安全措施来保证您的个人信息安全。除此之外，未经您的授权同意，我们不会向任何第三方提供或分享您的信息。</span
-				>
-			</p>
-			<p class="p6">
-				<br />
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">5.&nbsp;Topos</span><span class="s2">服务中的第三方服务由外部第三方主体提供，</span
-				><span class="s3">Topos</span
-				><span class="s2"
-					>无法获得您在使用该类第三方服务时产生的信息。但是，如果您已明示同意该第三方获得您的地理位置信息，该第三方将通过</span
-				><span class="s3">Topos</span
-				><span class="s2"
-					>接口获得您的终端地理位置信息。该信息属于敏感信息，拒绝提供该信息仅会使您无法使用上述第三方服务，但不影响您正常使用</span
-				><span class="s3">Topos</span><span class="s2">的功能。</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s1"><strong>如何联系我们</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p1">
-				<span class="s1"><strong>您可通过以下方式与我们联系：</strong></span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">1.&nbsp;</span><span class="s2">如对本政策内容有任何疑问、意见或建议，您可通过</span
-				><span class="s3">Topos</span><span class="s2">在线客服与我们联系；</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p3">
-				<span class="s3">2.&nbsp;</span><span class="s2">如果发现个人信息可能被泄露，您可以通过</span
-				><span class="s3">&nbsp;Topos</span><span class="s2">投诉举报，我们将在</span><span class="s3">15</span
-				><span class="s2">个工作日内联络您并完成核查和处理；</span>
-			</p>
-			<p class="p2">
-				<br />
-			</p>
-			<p class="p4">
-				<span class="s2">3.&nbsp;</span><span class="s1">我们还设立了意见、建议反馈邮箱</span
-				><span class="s2">: aego@muo.xyz/ jiatong.li@muo.xyz/</span>
-			</p>
-			<p class="p3">
-				<span class="s2">与我们联系，我们将在</span><span class="s3">15</span
-				><span class="s2">个工作日内联络您并完成核查和处理。</span>
-			</p>
-		</div>
-		<div class="Footer">
-			<div class="credit">
-				<b>Copyright 2020 by Topos</b>
-			</div>
-			<div class="footer-link">
-				<ul>
-					<a
-						><li>
-							<a href="/" class="footer-main-page"><b>主页</b></a>
-                </li>
-                </a>
-                <a>
-                    <li>
-                        <a href="/About" class="footer-about-page"><b>关于</b></a>
+        <!--Link main page css style sheet-->
+        <link href="/styles/Privacy.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <!-- (Mobile) navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mobile-menu">
+            <div class="logo-button">
+                <a class="navbar-brand" href="/"><img class="mobile-logo" src="/image/Topos-logo.svg" max-width="40px" width="10%" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"> 主页<span class="sr-only">(current)</span> </a>
                     </li>
-                </a>
-                <a>
-                    <li>
-                        <a href="/Privacy-policy" class="footer-privacy-page"><b>隐私条款</b></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About">
+						关于
+					</a>
                     </li>
-                </a>
-                <a>
-                    <li><b>联系我们</b></li>
-                </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Privacy-policy">
+						隐私条款
+					</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+						联系我们
+					</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- (Web) navigation bar -->
+        <div class="ui top fixed menu" id="web-menu">
+            <div class="item">
+                <img src="/image/Topos-logo.svg" width="2.5em" />
+            </div>
+            <a class="item" href="/">
+			主页
+		</a>
+            <a class="item" href="/About">
+			关于
+		</a>
+            <a class="item">
+			联系我们
+		</a>
+        </div>
+
+        <!-- (Web) Privacy Policy Section  -->
+        <div class="row" id="Privacy-Policy-Section">
+            <div class="col-3">
+                <!-- Menu Tab -->
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-引言" role="tab" aria-controls="v-pills-引言" aria-selected="true">引言</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-如何搜索您的信息" role="tab" aria-controls="v-如何搜索您的信息" aria-selected="false">
+					一. 我们如何搜集您的信息？</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-如何使用您的信息" role="tab" aria-controls="v-pills-如何使用您的信息" aria-selected="false">二. 我们如何使用您的信息</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-承诺" role="tab" aria-controls="v-pills-承诺" aria-selected="false">三. 我们承诺</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-联系我们" role="tab" aria-controls="v-pills-联系我们" aria-selected="false">四. 如何联系我们</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- 引言 -->
+                    <div class="tab-pane fade show active" id="v-pills-引言" role="tabpanel" aria-labelledby="v-pills-引言">
+                        <p class="p1">
+                            <span class="s1"><strong>引言</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">起源创想（北京）科技有限公司（以下简称「</span><span class="s3">Topos</span><span class="s2">」或「我们」）非常重视您的个人信息，并让您对个人信息拥有控制权，我们会使用强大的加密技术来保护您的隐私，同时制定严格的政策来管理所有数据。当您访问</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">时，或使用我们提供的服务前，您需要同意本政策中关于我们如何收集、使用、储存和分享您的相关信息的规定。如果您不同意本隐私政策中的任何内容，请立即停止使用或访问我们的产品和服务。本隐私政策要点如下：</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">i.&nbsp;</span><span class="s2">我们将逐一说明我们收集的您的个人信息类型及其对应的用途，以便您了解我们针对某一特定功能所收集的具体个人信息的类别、使用理由及收集方式。</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">ii.&nbsp;</span><span class="s2">当您使用一些功能时，我们会在获得您的同意后，收集您的一些敏感信息，除非按照相关法律法规要求必须收集，拒绝提供这些信息仅会使您无法使用相关特定功能，但不影响您正常使用</span><span class="s3">Topos</span><span class="s2">的其他功能。</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">iii.&nbsp;</span><span class="s2">目前，</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">不会主动共享或转让您的个人信息至</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">外的第三方，如存在其他共享或转让您的个人信息或您需要我们将您的个人信息共享或转让至</span>
+                            <span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">外的第三方情形时，我们会直接或确认第三方征得您对上述行为的明示同意，此外，我们会对对外提供信息的行为进行风险评估。</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">iv.&nbsp;</span><span class="s2">目前，</span><span class="s3">&nbsp;Topos</span><span class="s2">不会主动从</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">外的第三方获取您的个人信息。如未来为业务发展需要从第三方间接获取您的个人信息，我们会在获取前向您明示您个人信息的来源、类型及使用范围，如</span>
+                            <span class="s3">&nbsp;Topos</span><span class="s2">开展业务需进行的个人信息处理活动超出您原本向第三方提供个人信息时的授权同意范围，我们将在处理您的该等个人信息前，征得您的明示同意；此外，我们也将会严格遵守相关法律法规的规定，并要求第三方保障其提供的信息的合法性。</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">v.&nbsp;</span><span class="s2">您可以通过本指引所列途径访问、更正、删除您的个人信息，也可以撤回同意、注销帐号、投诉举报以及设置隐私功能。</span>
+                        </p>
+                        <p class="p3"><span class="s2">如您想了解更加详尽的信息，请根据以下索引阅读相应章节：</span></p>
+                        <p class="p3">
+                            <span class="s3">1.&nbsp;</span><span class="s2">我们如何搜集和使用您的信息</span>
+                        </p>
+                        <p class="p4">
+                            <span class="s2">2.&nbsp;</span><span class="s1">我们如何使用</span><span class="s2">&nbsp;Cookie&nbsp;</span><span class="s1">和同类技术</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">3.&nbsp;</span><span class="s2">如何更新、变更、导出、删除您的信息</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">4.&nbsp;</span><span class="s2">我们如何保护您的个人信息</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">5.&nbsp;</span><span class="s2">我们如何处理未成年人提供的个人信息</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">6.&nbsp;</span><span class="s2">我们如何共享、转让、公开披露您的个人信息</span>
+                        </p>
+                        <p class="p3"><span class="s3">7.&nbsp;</span><span class="s2">信息的存储</span></p>
+                        <p class="p3"><span class="s3">8.&nbsp;</span><span class="s2">第三方服务提供商</span></p>
+                        <p class="p3"><span class="s3">9.&nbsp;</span><span class="s2">本政策的更新</span></p>
+                        <p class="p4"><span class="s2">10.&nbsp;</span><span class="s1">适用范围</span></p>
+                        <p class="p3"><span class="s3">11.&nbsp;</span><span class="s2">如何联系我们</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                    </div>
+                    <!-- 一. 我们如何搜索您的信息? -->
+                    <div class="tab-pane fade" id="v-pills-如何搜索您的信息" role="tabpanel" aria-labelledby="v-如何搜索您的信息">
+                        <p class="p1">
+                            <span class="s1"><strong>一</strong></span><span class="s3"><strong>.&nbsp;</strong></span><span class="s1"><strong>我们如何搜集和使用您的信息？</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p1">
+                            <span class="s3"><strong>1.&nbsp;</strong></span><span class="s1"><strong>我们如何搜集您的信息？</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3"><span class="s2">我们提供服务时，可能会收集、储存和使用下列信息：</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p1">
+                            <span class="s3"><strong>1.1&nbsp;</strong></span><span class="s1"><strong>您提供的信息</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">1.1.1&nbsp;</span><span class="s2">您在注册账户或使用我们的服务时，向我们提供的可用于识别用户的个人身份的信息，例如姓名、电子邮件地址、电话号码、银行卡号、身份证号码、住址、通讯记录等信息，或我们可以正当地通过链接找到此类信息的其他数据。如果您想充分使用我们提供的各种分享功能，可能还需要创建公开显示的个人资料，其中可能会包含您的姓名和照片。</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">1.1.2&nbsp;</span><span class="s2">您通过我们的服务向其他方提供的共享信息，以及您使用我们的服务时上传、提交、存储、发送或接收的信息。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p1">
+                            <span class="s3"><strong>1.2&nbsp;</strong></span><span class="s1"><strong>您在使用服务过程中，我们获取的信息</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">我们会收集您使用的服务以及使用方式的信息，如您使用</span><span class="s3">&nbsp; Topos&nbsp;</span><span class="s2">在社区发表评论、弹幕或参与话题活动。此类信息包括：</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">1.2.1&nbsp;</span><span class="s2">设备信息：我们会根据您在软件安装及</span><span class="s3">/</span><span class="s2">或使用授权的具体权限，接收并记录您所使用的设备相关信息，例如您的设备型号、操作系统版本信息、设备设置、移动设备版本、设备识别码、屏幕分表率、设备环境等软硬件特征信息、设备所在位置相关信息，例如</span>
+                            <span class="s3">IP</span><span class="s2">地址、</span><span class="s3">GPS</span><span class="s2">位置以及能够提供相关信息的</span><span class="s3">WLAN</span><span class="s2">接入点、蓝牙和基站等传感器信息。如果您在安装及</span><span class="s3">/</span>
+                            <span class="s2">或使用过程中拒绝授予我们相应权限的，我们并不会记录您上述对应的信息。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.2&nbsp;</span><span class="s1">日志信息</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">A.&nbsp;</span><span class="s2">设备或软件信息，例如您的移动设备、网页浏览器或用于接入我们服务的其他程序所提供的配置信息、您的</span><span class="s3">IP</span><span class="s2">地址和移动设备所用的版本和设备识别码；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">B.&nbsp;</span><span class="s2">在使用我们服务时搜索或浏览的信息，例如您使用的网页搜索词语、访问的社交媒体页面</span><span class="s3">URL</span><span class="s2">地址，以及您在使用我们服务时浏览或要求提供的其他信息和内容详情；</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.3 IP</span><span class="s1">地址</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">A.&nbsp;</span><span class="s2">有关您曾使用的移动应用（</span><span class="s3">APP</span><span class="s2">）和其他软件的信息，以及您曾经使用该等移动应用和软件的信息；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">B.&nbsp;</span><span class="s2">您通过我们的服务进行通讯的信息，例如曾通讯的账号，以及通讯时间、数据和时长；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">C.&nbsp;</span><span class="s2">您通过我们的服务分享的内容所包含的信息（元数据），例如拍摄或上传的共享照片或录像的日期、时间或地点等。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">1.2.4&nbsp;</span><span class="s2">设备中的视频、图片、游戏软件等</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">我们的客户端会将您主动上传的视频、图片加密上传到服务器进行存储；可能会提取您设备中的软件名、版本号，通过加密上传到服务器进行处理、存储。同时，您也可以随时通过相关功能设置拒绝</span><span class="s3">/</span><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span><span class="s3">&nbsp;Topos</span>
+                            <span class="s2">其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的存储或处理。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">1.2.5&nbsp;</span><span class="s2">扫描二维码、拍摄照片、拍摄视频</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">当您使用扫描二维码、拍摄照片、拍摄视频功能时，我们将访问您的设备相机相关权限，并收集您提供的基于扫描二维码、拍摄照片后向我们上传的图片、视频信息。如您拒绝提供权限和内容的，仅会使您无法使用该功能，但并不影响您正常使用</span><span class="s3">Topos</span><span class="s2">的其他功能。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.6&nbsp;</span><span class="s1">位置信息</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">您可以授权开启设备定位功能并使用我们基于位置提供的相关服务，当然，您也可以通过关闭定位功能随时停止我们对您的地理位置信息的收集。您可以允许我们访问您的活动与体能训练记录，通过读取您的活动与体能训练，记录步频和步数信息。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.7&nbsp;</span><span class="s1">通讯录</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">如您想跟踪了解自己朋友们使用</span><span class="s3">Topos</span><span class="s2">的情况，可以申请使用</span><span class="s3">Topos&nbsp;</span><span class="s2">相关功能，我们将根据您的授权上传并保存您的应用列表，并以加密方式上传并保存用户通讯录中联系人手机号码，通过与服务器中信息匹配为您提供特色服务。同时，您也可以随时通过相关功能设置拒绝</span>
+                            <span class="s3">/</span><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span><span class="s3">&nbsp;Topos</span><span class="s2">其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.8&nbsp;</span><span class="s1">麦克风和录音</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">当您使用录制视频功能时我们将访问您的设备麦克风和录音相关权限，我们需要收集您的语音信息、语音交互信息。如您拒绝提供的，仅会使您无法使用该功能，但并不影响您正常使用</span><span class="s3">&nbsp;Topos</span><span class="s2">的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.9&nbsp;</span><span class="s1">交易信息</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">在您使用该功能的过程中可能会需要进行支付，在支付过程中，我们可能会收集您的第三方支付账号（例如银联账号）。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.10&nbsp;</span><span class="s1">蓝牙</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">若您已有相关硬件设备，希望将硬件产品记录的信息（包括但不限于心率、睡眠信息、步数、运动数据、体重、</span><span class="s3">BMI</span><span class="s2">、等已同意上传的个人信息及个人身体数据）同步至手机端</span><span class="s3">,&nbsp;</span><span class="s2">则可以通过开启蓝牙功能实现。如您拒绝开启的，仅会使您无法使用该功能，但并不影响您正常使用</span>
+                            <span class="s3">&nbsp;Topos</span><span class="s2">的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3"><span class="s3">1.2.11&nbsp;</span><span class="s2">来源于第三方的信息</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">在一些法律允许的情况下，我们可能从第三方处获得您的个人信息。例如：</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">*&nbsp;</span><span class="s2">出于安全和防欺诈的目的，针对特定账号、金融交易等服务，在您授权的前提下，通过合法来源核实您的信息（如电话号码）；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">*&nbsp;</span><span class="s2">通过指定的唯一标识符（如从广告主处获得的</span><span class="s3">IMEI</span><span class="s2">编号）为您对应提供广告服务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">*&nbsp;</span><span class="s2">我们还可能从第三方社交网络服务中获取某些信息，例如账户、昵称（例如，当您使用社交网络账户登录</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">服务时）；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">*&nbsp;</span><span class="s2">他人提供的与您有关的信息，例如其他用户在使用</span><span class="s3">&nbsp;Topos</span><span class="s2">商城时填写的您的收货地址。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4"><span class="s2">1.2.12&nbsp;</span><span class="s1">非个人信息</span></p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">我们还可能收集其他无法识别到特定个人、根据当地适用法律不属于个人信息的信息，例如您使用特定服务时产生的统计类数据，如匿名设备相关信息、日活事件、页面访问事件、页面访问时长事件、会话事件；网络监控数据如请求时长、请求与错误请求数等；以及应用崩溃事件。收集此类信息的目的在于改善我们向您提供的服务。所收集信息的类别和数量取决于您如何使用我们产品或服务。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">我们会收集诸如唯一设备标识符、设备型号、系统版本号等与您在我们的网站或移动应用中的活动有关的信息。我们会将此类信息汇总，用于帮助我们向客户提供更有用的信息，了解客户对我们网站、产品或服务中的哪些部分最感兴趣。就本隐私政策而言，汇总数据被视为非个人信息。如果我们将非个人信息与个人信息结合使用，则在结合使用期间，此类信息将被视为个人信息。</span>
+                        </p>
+                    </div>
+                    <!-- 二. 我们如何使用您的信息 -->
+                    <div class="tab-pane fade" id="v-pills-如何使用您的信息" role="tabpanel" aria-labelledby="v-pills-如何使用您的信息">
+                        <p class="p1">
+                            <span class="s1"><strong>二</strong></span><span class="s2"><strong>.&nbsp;</strong></span><span class="s1"><strong>我们如何使用您的信息</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">收集个人信息的目的在于向您提供产品或服务，并且保证我们遵守适用的相关法律、法规及其他规范性文件。我们可能将上述收集的信息用作以下用途：</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.1&nbsp;</span><span class="s3">向您提供、处理、维护、改善、开发我们的产品或提供给您的服务，</span><span class="s2">&nbsp;</span><span class="s3">例如交付、验证、售后、客户支持和广告宣传；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.2&nbsp;</span><span class="s3">在我们提供服务时，用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途，确保我们向您提供的产品和服务的安全性；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.3&nbsp;</span><span class="s3">内部目的，如数据分析、研究和开发与我们产品或服务的使用相关的统计信息，以更好地改进我们的产品或服务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.4&nbsp;</span><span class="s3">帮助我们设计新服务，改善我们现有服务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.5&nbsp;</span><span class="s3">使我们更加了解您如何接入和使用我们的服务，从而针对性地回应您的个性化需求，例如语言设定、位置设定、个性化的帮助服务和指示，或对您和其他用户作出其他方面的回应；若您对社区展示内容不感兴趣则可通过「长按内容」后点击「不感兴趣」的方式关闭该条内容，同时您可通过「我」</span><span class="s2">-</span><span class="s3">「设置」</span>
+                            <span class="s2">-</span><span class="s3">「隐私」</span><span class="s2">-</span><span class="s3">「个性化推荐」自行决定将社区个性化推荐及课程个性化推荐开启或关闭；也可通过「我」</span><span class="s2">-</span><span class="s3">「设置」</span><span class="s2">-</span>
+                            <span class="s3">「消息提醒」</span>
+                            <span class="s2">-</span><span class="s3">「系统通知」自行决定是否接受推送消息。</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.6&nbsp;</span><span class="s3">向您提供与您更加相关的推广活动，您可根据喜好自行决定开启或关闭；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.7&nbsp;</span><span class="s3">评估我们服务中的广告和其他促销及推广活动的效果，并加以改善；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.8&nbsp;</span><span class="s3">执行软件验证、升级服务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.9&nbsp;</span><span class="s3">应用户特殊要求而提供特定服务时，需要将信息提供给我们的关联公司、第三方或其他用户；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.10&nbsp;</span><span class="s3">其他不违反任何强制性法律法规的情况；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.11&nbsp;</span><span class="s3">让您参与有关我们产品和服务的调查；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.12&nbsp;</span><span class="s3">储存并维护与您相关的信息，用于我们的业务运营</span><span class="s2">&nbsp;</span><span class="s3">（例如业务统计）或履行法律义务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">2.13&nbsp;</span><span class="s3">其他征得您同意的目的。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">关于我们如何使用您的信息（其中可能包含个人信息），下面提供了更多详细示例：</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">登录使用</span><span class="s2">&nbsp;Topos</span><span class="s3">产品或服务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">创建及维护您的</span><span class="s2">&nbsp;Topos</span><span class="s3">账号。</span><span class="s2">&nbsp;</span><span class="s3">您通过网站或移动设备创建</span><span class="s2">&nbsp;Topos</span>
+                            <span class="s3">账号时提供的个人信息可用于建立您个人</span><span class="s2">&nbsp;Topos</span><span class="s3">账号和个人资料；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">处理您的订购单。</span><span class="s2">&nbsp;</span><span class="s3">与电子商务订单相关的信息可用于处理订购单和相关的售后服务，包括客户支持和重新发货。此外，订单号将用于校验物流合作伙伴的订单和包裹的实际交付。收件人信息，包括姓名、地址、电话号码和邮政编码，将用于送货。购买物品的清单用于打印发票，并使您能够确定包裹中的物品；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">参与社区。</span><span class="s2">&nbsp;</span><span class="s3">与社区或</span><span class="s2">Topos</span><span class="s3">其他类似社交平台有关的个人信息可能被用于个人资料页面展示、与其他用户进行互动、参与论坛；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">提供基于位置的服务。</span><span class="s2">&nbsp;</span><span class="s3">在使用</span><span class="s2">Topos&nbsp;</span><span class="s3">服务时，我们或第三方服务提供商与业务合作伙伴（更多详细信息请参阅下方</span><span class="s2">&ldquo;</span>
+                            <span class="s3">我们如何共享，转移和公开披露您的个人信息</span><span class="s2">&rdquo;</span><span class="s3">）可能会使用位置信息以便为您提供服务，并且基于准确的位置提供更好的用户体验，例如获取准确的跑步轨迹，您可以随时在设置中关闭</span><span class="s2">&nbsp;Topos&nbsp;</span><span class="s3">位置服务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">改善用户体验。</span><span class="s2">&nbsp;</span><span class="s3">某些选择性加入功能，例如用户体验计划，允许我们分析用户如何使用手机和</span><span class="s2">&nbsp;Topos&nbsp;</span><span class="s3">服务的数据，以改善用户体验，例如发送崩溃报告；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">收集用户反馈<strong>。</strong></span><span class="s2">&nbsp;</span><span class="s3">您选择提供的反馈对帮助</span><span class="s2">&nbsp;Topos&nbsp;</span><span class="s3">改进服务非常重要。为了处理您提供的反馈，</span>
+                            <span class="s2">&nbsp;Topos</span><span class="s3">可能会使用您所提供的个人信息与您联系，并保留记录用于解决问题及改进服务；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">发送通知<strong>。</strong></span><span class="s2">&nbsp;</span><span class="s3">我们可能会将您的个人信息用于发送重要通知，例如有关订单的通知和我们的条款、条件和政策的变更。由于此类信息对您和我们之间的沟通至关重要，不建议您拒绝接收此类信息；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">*&nbsp;</span><span class="s3">进行设备的分析以提供更好的用户体验<strong>。</strong></span><span class="s2">&nbsp; Topos</span><span class="s3">将会进行硬件及软件的分析，以进一步提升设备的使用体验。</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s3">我们可能将这些信息与其他信息结合起来（包括跨不同服务或设备如电脑、手机、智能硬件和其他联网设备中的信息），用于提供和改进我们的产品、服务、内容和广告宣传。例如，我们可能会在所有需要</span><span class="s2">&nbsp;Topos</span><span class="s3">账号的服务中使用您</span><span class="s2">&nbsp;Topos</span>
+                            <span class="s3">账号的详细信息。同时，为了让您有更好的体验以及改善我们的服务，在符合相关法律法规规定或经您同意时，我们可能会将来自您或与您相关的不同产品、服务或设备的信息整理成标签，来提供建议、定制内容和个性化功能。根据</span><span class="s2">&nbsp;</span><span class="s3">我们合并信息的原因以及适用法律的要求，我们将为您提供此类整合的具体控制机制。您有权拒绝以直接营销目的进行的个人信息处理以及自动化决策等。为了行使上述权利，您可通过「我」</span>
+                            <span class="s2">-</span><span class="s3">「设置」</span><span class="s2">-</span><span class="s3">「隐私」</span><span class="s2">-</span><span class="s3">「个性化推荐」</span><span class="s2">-&nbsp;</span><span class="s3">关闭开关，或者参考各产品或服务的单独隐私政策中说明的控制机制。</span>
+                        </p>
+                    </div>
+                    <!-- 三. 我们承诺 -->
+                    <div class="tab-pane fade" id="v-pills-承诺" role="tabpanel" aria-labelledby="v-pills-承诺">
+                        <p class="p1">
+                            <span class="s1"><strong>三.&nbsp;</strong></span><span class="s2"><strong>我们承诺</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s1">3.1&nbsp;</span><span class="s3">我们不会根据敏感类别（例如种族、宗教、性取向或健康状况）向您展示个性化广告；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s1">3.2&nbsp;</span><span class="s3">我们不会与广告主分享可用于识别您个人身份的信息，例如您的姓名或电子邮件地址（除非经您授权同意）；</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s1">3.3&nbsp;</span><span class="s3">在任何时候、任何情况下都不会向任何第三方出售您的个人信息，我们只会在法律允许的范围内使用根据本协议获得的信息。我们会制定严格的政策保护您的个人信息，除非事先获得您的授权或本声明另有规定之外，不会将您的这些信息对外公开或向第三方提供。</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4">
+                            <span class="s1">4.&nbsp;</span><span class="s3">为保证服务质量，我们可能会由关联公司或其他可信合作单位向您提供您所要求的服务或您可能感兴趣的内容。经您授权同意后，我们将向关联公司或合作单位分享该产品、服务所必须的个人信息。我们会要求关联公司及合作单位按照我们的说明、隐私政策以及任何其他适当的保密和安全措施来保证您的个人信息安全。除此之外，未经您的授权同意，我们不会向任何第三方提供或分享您的信息。</span>
+                        </p>
+                        <p class="p5">
+                            <br />
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s1">5.&nbsp;Topos</span><span class="s3">服务中的第三方服务由外部第三方主体提供，</span><span class="s1">Topos</span><span class="s3">无法获得您在使用该类第三方服务时产生的信息。但是，如果您已明示同意该第三方获得您的地理位置信息，该第三方将通过</span><span class="s1">Topos</span>
+                            <span class="s3">接口获得您的终端地理位置信息。该信息属于敏感信息，拒绝提供该信息仅会使您无法使用上述第三方服务，但不影响您正常使用</span><span class="s1">Topos</span><span class="s3">的功能。</span>
+                        </p>
+                    </div>
+                    <!-- 四. 如何联系我们 -->
+                    <div class="tab-pane fade" id="v-pills-联系我们" role="tabpanel" aria-labelledby="v-pills-联系我们">
+                        <p class="p1">
+                            <span class="s1"><strong>四. 如何联系我们</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p1">
+                            <span class="s1"><strong>您可通过以下方式与我们联系：</strong></span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">1.&nbsp;</span><span class="s2">如对本政策内容有任何疑问、意见或建议，您可通过</span><span class="s3">Topos</span><span class="s2">在线客服与我们联系；</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p3">
+                            <span class="s3">2.&nbsp;</span><span class="s2">如果发现个人信息可能被泄露，您可以通过</span><span class="s3">&nbsp;Topos</span><span class="s2">投诉举报，我们将在</span><span class="s3">15</span><span class="s2">个工作日内联络您并完成核查和处理；</span>
+                        </p>
+                        <p class="p2">
+                            <br />
+                        </p>
+                        <p class="p4">
+                            <span class="s2">3.&nbsp;</span><span class="s1">我们还设立了意见、建议反馈邮箱</span><span class="s2">:
+							aego@muo.xyz/ jiatong.li@muo.xyz/</span>
+                        </p>
+                        <p class="p3">
+                            <span class="s2">与我们联系，我们将在</span><span class="s3">15</span><span class="s2">个工作日内联络您并完成核查和处理。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- (Mobile) Privacy Policy -->
+        <div id="Mobile-Privacy-Policy-Section">
+            <p class="p1">
+                <span class="s1"><strong>引言</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">起源创想（北京）科技有限公司（以下简称「</span><span class="s3">Topos</span><span class="s2">」或「我们」）非常重视您的个人信息，并让您对个人信息拥有控制权，我们会使用强大的加密技术来保护您的隐私，同时制定严格的政策来管理所有数据。当您访问</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">时，或使用我们提供的服务前，您需要同意本政策中关于我们如何收集、使用、储存和分享您的相关信息的规定。如果您不同意本隐私政策中的任何内容，请立即停止使用或访问我们的产品和服务。本隐私政策要点如下：</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">i.&nbsp;</span><span class="s2">我们将逐一说明我们收集的您的个人信息类型及其对应的用途，以便您了解我们针对某一特定功能所收集的具体个人信息的类别、使用理由及收集方式。</span>
+            </p>
+            <p class="p3">
+                <span class="s3">ii.&nbsp;</span><span class="s2">当您使用一些功能时，我们会在获得您的同意后，收集您的一些敏感信息，除非按照相关法律法规要求必须收集，拒绝提供这些信息仅会使您无法使用相关特定功能，但不影响您正常使用</span><span class="s3">Topos</span><span class="s2">的其他功能。</span>
+            </p>
+            <p class="p3">
+                <span class="s3">iii.&nbsp;</span><span class="s2">目前，</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">不会主动共享或转让您的个人信息至</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">外的第三方，如存在其他共享或转让您的个人信息或您需要我们将您的个人信息共享或转让至</span>
+                <span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">外的第三方情形时，我们会直接或确认第三方征得您对上述行为的明示同意，此外，我们会对对外提供信息的行为进行风险评估。</span>
+            </p>
+            <p class="p3">
+                <span class="s3">iv.&nbsp;</span><span class="s2">目前，</span><span class="s3">&nbsp;Topos</span><span class="s2">不会主动从</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">外的第三方获取您的个人信息。如未来为业务发展需要从第三方间接获取您的个人信息，我们会在获取前向您明示您个人信息的来源、类型及使用范围，如</span>
+                <span class="s3">&nbsp;Topos</span><span class="s2">开展业务需进行的个人信息处理活动超出您原本向第三方提供个人信息时的授权同意范围，我们将在处理您的该等个人信息前，征得您的明示同意；此外，我们也将会严格遵守相关法律法规的规定，并要求第三方保障其提供的信息的合法性。</span>
+            </p>
+            <p class="p3">
+                <span class="s3">v.&nbsp;</span><span class="s2">您可以通过本指引所列途径访问、更正、删除您的个人信息，也可以撤回同意、注销帐号、投诉举报以及设置隐私功能。</span>
+            </p>
+            <p class="p3"><span class="s2">如您想了解更加详尽的信息，请根据以下索引阅读相应章节：</span></p>
+            <p class="p3"><span class="s3">1.&nbsp;</span><span class="s2">我们如何搜集和使用您的信息</span></p>
+            <p class="p4">
+                <span class="s2">2.&nbsp;</span><span class="s1">我们如何使用</span><span class="s2">&nbsp;Cookie&nbsp;</span><span class="s1">和同类技术</span>
+            </p>
+            <p class="p3"><span class="s3">3.&nbsp;</span><span class="s2">如何更新、变更、导出、删除您的信息</span></p>
+            <p class="p3"><span class="s3">4.&nbsp;</span><span class="s2">我们如何保护您的个人信息</span></p>
+            <p class="p3"><span class="s3">5.&nbsp;</span><span class="s2">我们如何处理未成年人提供的个人信息</span></p>
+            <p class="p3">
+                <span class="s3">6.&nbsp;</span><span class="s2">我们如何共享、转让、公开披露您的个人信息</span>
+            </p>
+            <p class="p3"><span class="s3">7.&nbsp;</span><span class="s2">信息的存储</span></p>
+            <p class="p3"><span class="s3">8.&nbsp;</span><span class="s2">第三方服务提供商</span></p>
+            <p class="p3"><span class="s3">9.&nbsp;</span><span class="s2">本政策的更新</span></p>
+            <p class="p4"><span class="s2">10.&nbsp;</span><span class="s1">适用范围</span></p>
+            <p class="p3"><span class="s3">11.&nbsp;</span><span class="s2">如何联系我们</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s1"><strong>一</strong></span><span class="s3"><strong>.&nbsp;</strong></span><span class="s1"><strong>我们如何搜集和使用您的信息？</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s3"><strong>1.&nbsp;</strong></span><span class="s1"><strong>我们如何搜集您的信息？</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3"><span class="s2">我们提供服务时，可能会收集、储存和使用下列信息：</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s3"><strong>1.1&nbsp;</strong></span><span class="s1"><strong>您提供的信息</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">1.1.1&nbsp;</span><span class="s2">您在注册账户或使用我们的服务时，向我们提供的可用于识别用户的个人身份的信息，例如姓名、电子邮件地址、电话号码、银行卡号、身份证号码、住址、通讯记录等信息，或我们可以正当地通过链接找到此类信息的其他数据。如果您想充分使用我们提供的各种分享功能，可能还需要创建公开显示的个人资料，其中可能会包含您的姓名和照片。</span>
+            </p>
+            <p class="p3">
+                <span class="s3">1.1.2&nbsp;</span><span class="s2">您通过我们的服务向其他方提供的共享信息，以及您使用我们的服务时上传、提交、存储、发送或接收的信息。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s3"><strong>1.2&nbsp;</strong></span><span class="s1"><strong>您在使用服务过程中，我们获取的信息</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">我们会收集您使用的服务以及使用方式的信息，如您使用</span><span class="s3">&nbsp; Topos&nbsp;</span><span class="s2">在社区发表评论、弹幕或参与话题活动。此类信息包括：</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">1.2.1&nbsp;</span><span class="s2">设备信息：我们会根据您在软件安装及</span><span class="s3">/</span><span class="s2">或使用授权的具体权限，接收并记录您所使用的设备相关信息，例如您的设备型号、操作系统版本信息、设备设置、移动设备版本、设备识别码、屏幕分表率、设备环境等软硬件特征信息、设备所在位置相关信息，例如</span><span class="s3">IP</span>
+                <span class="s2">地址、</span><span class="s3">GPS</span><span class="s2">位置以及能够提供相关信息的</span><span class="s3">WLAN</span><span class="s2">接入点、蓝牙和基站等传感器信息。如果您在安装及</span><span class="s3">/</span><span class="s2">或使用过程中拒绝授予我们相应权限的，我们并不会记录您上述对应的信息。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.2&nbsp;</span><span class="s1">日志信息</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">A.&nbsp;</span><span class="s2">设备或软件信息，例如您的移动设备、网页浏览器或用于接入我们服务的其他程序所提供的配置信息、您的</span><span class="s3">IP</span><span class="s2">地址和移动设备所用的版本和设备识别码；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">B.&nbsp;</span><span class="s2">在使用我们服务时搜索或浏览的信息，例如您使用的网页搜索词语、访问的社交媒体页面</span><span class="s3">URL</span><span class="s2">地址，以及您在使用我们服务时浏览或要求提供的其他信息和内容详情；</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.3 IP</span><span class="s1">地址</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">A.&nbsp;</span><span class="s2">有关您曾使用的移动应用（</span><span class="s3">APP</span><span class="s2">）和其他软件的信息，以及您曾经使用该等移动应用和软件的信息；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">B.&nbsp;</span><span class="s2">您通过我们的服务进行通讯的信息，例如曾通讯的账号，以及通讯时间、数据和时长；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">C.&nbsp;</span><span class="s2">您通过我们的服务分享的内容所包含的信息（元数据），例如拍摄或上传的共享照片或录像的日期、时间或地点等。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3"><span class="s3">1.2.4&nbsp;</span><span class="s2">设备中的视频、图片、游戏软件等</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">我们的客户端会将您主动上传的视频、图片加密上传到服务器进行存储；可能会提取您设备中的软件名、版本号，通过加密上传到服务器进行处理、存储。同时，您也可以随时通过相关功能设置拒绝</span><span class="s3">/</span><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span><span class="s3">&nbsp;Topos</span><span class="s2">其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的存储或处理。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3"><span class="s3">1.2.5&nbsp;</span><span class="s2">扫描二维码、拍摄照片、拍摄视频</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">当您使用扫描二维码、拍摄照片、拍摄视频功能时，我们将访问您的设备相机相关权限，并收集您提供的基于扫描二维码、拍摄照片后向我们上传的图片、视频信息。如您拒绝提供权限和内容的，仅会使您无法使用该功能，但并不影响您正常使用</span><span class="s3">Topos</span><span class="s2">的其他功能。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.6&nbsp;</span><span class="s1">位置信息</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">您可以授权开启设备定位功能并使用我们基于位置提供的相关服务，当然，您也可以通过关闭定位功能随时停止我们对您的地理位置信息的收集。您可以允许我们访问您的活动与体能训练记录，通过读取您的活动与体能训练，记录步频和步数信息。同时，您也可以随时通过相关功能设置取消该权限。当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.7&nbsp;</span><span class="s1">通讯录</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">如您想跟踪了解自己朋友们使用</span><span class="s3">Topos</span><span class="s2">的情况，可以申请使用</span><span class="s3">Topos&nbsp;</span><span class="s2">相关功能，我们将根据您的授权上传并保存您的应用列表，并以加密方式上传并保存用户通讯录中联系人手机号码，通过与服务器中信息匹配为您提供特色服务。同时，您也可以随时通过相关功能设置拒绝</span>
+                <span class="s3">/</span><span class="s2">取消该权限。拒绝提供该权限仅会使您无法使用上述功能，但不影响</span><span class="s3">&nbsp;Topos</span><span class="s2">其他功能与服务的正常使用；但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.8&nbsp;</span><span class="s1">麦克风和录音</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">当您使用录制视频功能时我们将访问您的设备麦克风和录音相关权限，我们需要收集您的语音信息、语音交互信息。如您拒绝提供的，仅会使您无法使用该功能，但并不影响您正常使用</span><span class="s3">&nbsp;Topos</span><span class="s2">的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.9&nbsp;</span><span class="s1">交易信息</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">在您使用该功能的过程中可能会需要进行支付，在支付过程中，我们可能会收集您的第三方支付账号（例如银联账号）。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.10&nbsp;</span><span class="s1">蓝牙</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">若您已有相关硬件设备，希望将硬件产品记录的信息（包括但不限于心率、睡眠信息、步数、运动数据、体重、</span><span class="s3">BMI</span><span class="s2">、等已同意上传的个人信息及个人身体数据）同步至手机端</span><span class="s3">,&nbsp;</span><span class="s2">则可以通过开启蓝牙功能实现。如您拒绝开启的，仅会使您无法使用该功能，但并不影响您正常使用</span>
+                <span class="s3">&nbsp;Topos</span><span class="s2">的其他功能。同时，您也可以随时通过相关功能设置取消该权限。但当您取消该授权后，我们将不再收集该信息，也无法再为您提供上述与之对应的服务；但除非您依照法律的规定删除了您的信息，否则您的取消行为不会影响我们基于您之前的授权进行的信息的处理、存储。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3"><span class="s3">1.2.11&nbsp;</span><span class="s2">来源于第三方的信息</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3"><span class="s2">在一些法律允许的情况下，我们可能从第三方处获得您的个人信息。例如：</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">出于安全和防欺诈的目的，针对特定账号、金融交易等服务，在您授权的前提下，通过合法来源核实您的信息（如电话号码）；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">通过指定的唯一标识符（如从广告主处获得的</span><span class="s3">IMEI</span><span class="s2">编号）为您对应提供广告服务；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">我们还可能从第三方社交网络服务中获取某些信息，例如账户、昵称（例如，当您使用社交网络账户登录</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">服务时）；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">他人提供的与您有关的信息，例如其他用户在使用</span><span class="s3">&nbsp;Topos</span><span class="s2">商城时填写的您的收货地址。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4"><span class="s2">1.2.12&nbsp;</span><span class="s1">非个人信息</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">我们还可能收集其他无法识别到特定个人、根据当地适用法律不属于个人信息的信息，例如您使用特定服务时产生的统计类数据，如匿名设备相关信息、日活事件、页面访问事件、页面访问时长事件、会话事件；网络监控数据如请求时长、请求与错误请求数等；以及应用崩溃事件。收集此类信息的目的在于改善我们向您提供的服务。所收集信息的类别和数量取决于您如何使用我们产品或服务。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">我们会收集诸如唯一设备标识符、设备型号、系统版本号等与您在我们的网站或移动应用中的活动有关的信息。我们会将此类信息汇总，用于帮助我们向客户提供更有用的信息，了解客户对我们网站、产品或服务中的哪些部分最感兴趣。就本隐私政策而言，汇总数据被视为非个人信息。如果我们将非个人信息与个人信息结合使用，则在结合使用期间，此类信息将被视为个人信息。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s3"><strong><span class="Apple-converted-space"></span></strong>
+                </span><span class="s1"><strong>二</strong></span><span class="s3"><strong>.&nbsp;</strong></span><span class="s1"><strong>我们如何使用您的信息</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">收集个人信息的目的在于向您提供产品或服务，并且保证我们遵守适用的相关法律、法规及其他规范性文件。我们可能将上述收集的信息用作以下用途：</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">2.1&nbsp;</span><span class="s2">向您提供、处理、维护、改善、开发我们的产品或提供给您的服务，</span><span class="s3">&nbsp;</span><span class="s2">例如交付、验证、售后、客户支持和广告宣传；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.2&nbsp;</span><span class="s2">在我们提供服务时，用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途，确保我们向您提供的产品和服务的安全性；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.3&nbsp;</span><span class="s2">内部目的，如数据分析、研究和开发与我们产品或服务的使用相关的统计信息，以更好地改进我们的产品或服务；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.4&nbsp;</span><span class="s2">帮助我们设计新服务，改善我们现有服务；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.5&nbsp;</span><span class="s2">使我们更加了解您如何接入和使用我们的服务，从而针对性地回应您的个性化需求，例如语言设定、位置设定、个性化的帮助服务和指示，或对您和其他用户作出其他方面的回应；若您对社区展示内容不感兴趣则可通过「长按内容」后点击「不感兴趣」的方式关闭该条内容，同时您可通过「我」</span><span class="s3">-</span><span class="s2">「设置」</span>
+                <span class="s3">-</span><span class="s2">「隐私」</span><span class="s3">-</span><span class="s2">「个性化推荐」自行决定将社区个性化推荐及课程个性化推荐开启或关闭；也可通过「我」</span><span class="s3">-</span><span class="s2">「设置」</span><span class="s3">-</span><span class="s2">「消息提醒」</span>
+                <span class="s3">-</span><span class="s2">「系统通知」自行决定是否接受推送消息。</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.6&nbsp;</span><span class="s2">向您提供与您更加相关的推广活动，您可根据喜好自行决定开启或关闭；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.7&nbsp;</span><span class="s2">评估我们服务中的广告和其他促销及推广活动的效果，并加以改善；</span>
+            </p>
+            <p class="p3"><span class="s3">2.8&nbsp;</span><span class="s2">执行软件验证、升级服务；</span></p>
+            <p class="p3">
+                <span class="s3">2.9&nbsp;</span><span class="s2">应用户特殊要求而提供特定服务时，需要将信息提供给我们的关联公司、第三方或其他用户；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.10&nbsp;</span><span class="s2">其他不违反任何强制性法律法规的情况；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.11&nbsp;</span><span class="s2">让您参与有关我们产品和服务的调查；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">2.12&nbsp;</span><span class="s2">储存并维护与您相关的信息，用于我们的业务运营</span><span class="s3">&nbsp;</span><span class="s2">（例如业务统计）或履行法律义务；</span>
+            </p>
+            <p class="p3"><span class="s3">2.13&nbsp;</span><span class="s2">其他征得您同意的目的。</span></p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s2">关于我们如何使用您的信息（其中可能包含个人信息），下面提供了更多详细示例：</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">登录使用</span><span class="s3">&nbsp;Topos</span><span class="s2">产品或服务；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">创建及维护您的</span><span class="s3">&nbsp;Topos</span><span class="s2">账号。</span><span class="s3">&nbsp;</span><span class="s2">您通过网站或移动设备创建</span><span class="s3">&nbsp;Topos</span><span class="s2">账号时提供的个人信息可用于建立您个人</span>
+                <span class="s3">&nbsp;Topos</span><span class="s2">账号和个人资料；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">处理您的订购单。</span><span class="s3">&nbsp;</span><span class="s2">与电子商务订单相关的信息可用于处理订购单和相关的售后服务，包括客户支持和重新发货。此外，订单号将用于校验物流合作伙伴的订单和包裹的实际交付。收件人信息，包括姓名、地址、电话号码和邮政编码，将用于送货。购买物品的清单用于打印发票，并使您能够确定包裹中的物品；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">参与社区。</span><span class="s3">&nbsp;</span><span class="s2">与社区或</span><span class="s3">Topos</span><span class="s2">其他类似社交平台有关的个人信息可能被用于个人资料页面展示、与其他用户进行互动、参与论坛；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">提供基于位置的服务。</span><span class="s3">&nbsp;</span><span class="s2">在使用</span><span class="s3">Topos&nbsp;</span><span class="s2">服务时，我们或第三方服务提供商与业务合作伙伴（更多详细信息请参阅下方</span><span class="s3">&ldquo;</span>
+                <span class="s2">我们如何共享，转移和公开披露您的个人信息</span><span class="s3">&rdquo;</span><span class="s2">）可能会使用位置信息以便为您提供服务，并且基于准确的位置提供更好的用户体验，例如获取准确的跑步轨迹，您可以随时在设置中关闭</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">位置服务；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">改善用户体验。</span><span class="s3">&nbsp;</span><span class="s2">某些选择性加入功能，例如用户体验计划，允许我们分析用户如何使用手机和</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">服务的数据，以改善用户体验，例如发送崩溃报告；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">收集用户反馈<strong>。</strong></span><span class="s3">&nbsp;</span><span class="s2">您选择提供的反馈对帮助</span><span class="s3">&nbsp;Topos&nbsp;</span><span class="s2">改进服务非常重要。为了处理您提供的反馈，</span>
+                <span class="s3">&nbsp;Topos</span><span class="s2">可能会使用您所提供的个人信息与您联系，并保留记录用于解决问题及改进服务；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">发送通知<strong>。</strong></span><span class="s3">&nbsp;</span><span class="s2">我们可能会将您的个人信息用于发送重要通知，例如有关订单的通知和我们的条款、条件和政策的变更。由于此类信息对您和我们之间的沟通至关重要，不建议您拒绝接收此类信息；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">*&nbsp;</span><span class="s2">进行设备的分析以提供更好的用户体验<strong>。</strong></span><span class="s3">&nbsp; Topos</span><span class="s2">将会进行硬件及软件的分析，以进一步提升设备的使用体验。</span>
+            </p>
+            <p class="p3">
+                <span class="s2">我们可能将这些信息与其他信息结合起来（包括跨不同服务或设备如电脑、手机、智能硬件和其他联网设备中的信息），用于提供和改进我们的产品、服务、内容和广告宣传。例如，我们可能会在所有需要</span><span class="s3">&nbsp;Topos</span><span class="s2">账号的服务中使用您</span><span class="s3">&nbsp;Topos</span><span class="s2">账号的详细信息。同时，为了让您有更好的体验以及改善我们的服务，在符合相关法律法规规定或经您同意时，我们可能会将来自您或与您相关的不同产品、服务或设备的信息整理成标签，来提供建议、定制内容和个性化功能。根据</span>
+                <span class="s3">&nbsp;</span><span class="s2">我们合并信息的原因以及适用法律的要求，我们将为您提供此类整合的具体控制机制。您有权拒绝以直接营销目的进行的个人信息处理以及自动化决策等。为了行使上述权利，您可通过「我」</span><span class="s3">-</span><span class="s2">「设置」</span><span class="s3">-</span><span class="s2">「隐私」</span>
+                <span class="s3">-</span>
+                <span class="s2">「个性化推荐」</span><span class="s3">-&nbsp;</span><span class="s2">关闭开关，或者参考各产品或服务的单独隐私政策中说明的控制机制。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s3"><strong>三.&nbsp;</strong></span><span class="s1"><strong>我们承诺</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">3.1&nbsp;</span><span class="s2">我们不会根据敏感类别（例如种族、宗教、性取向或健康状况）向您展示个性化广告；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">3.2&nbsp;</span><span class="s2">我们不会与广告主分享可用于识别您个人身份的信息，例如您的姓名或电子邮件地址（除非经您授权同意）；</span>
+            </p>
+            <p class="p3">
+                <span class="s3">3.3&nbsp;</span><span class="s2">在任何时候、任何情况下都不会向任何第三方出售您的个人信息，我们只会在法律允许的范围内使用根据本协议获得的信息。我们会制定严格的政策保护您的个人信息，除非事先获得您的授权或本声明另有规定之外，不会将您的这些信息对外公开或向第三方提供。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p5">
+                <span class="s3">4.&nbsp;</span><span class="s2">为保证服务质量，我们可能会由关联公司或其他可信合作单位向您提供您所要求的服务或您可能感兴趣的内容。经您授权同意后，我们将向关联公司或合作单位分享该产品、服务所必须的个人信息。我们会要求关联公司及合作单位按照我们的说明、隐私政策以及任何其他适当的保密和安全措施来保证您的个人信息安全。除此之外，未经您的授权同意，我们不会向任何第三方提供或分享您的信息。</span>
+            </p>
+            <p class="p6">
+                <br />
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">5.&nbsp;Topos</span><span class="s2">服务中的第三方服务由外部第三方主体提供，</span><span class="s3">Topos</span><span class="s2">无法获得您在使用该类第三方服务时产生的信息。但是，如果您已明示同意该第三方获得您的地理位置信息，该第三方将通过</span><span class="s3">Topos</span><span class="s2">接口获得您的终端地理位置信息。该信息属于敏感信息，拒绝提供该信息仅会使您无法使用上述第三方服务，但不影响您正常使用</span>
+                <span class="s3">Topos</span><span class="s2">的功能。</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s1"><strong>四. 如何联系我们</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p1">
+                <span class="s1"><strong>您可通过以下方式与我们联系：</strong></span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">1.&nbsp;</span><span class="s2">如对本政策内容有任何疑问、意见或建议，您可通过</span><span class="s3">Topos</span><span class="s2">在线客服与我们联系；</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p3">
+                <span class="s3">2.&nbsp;</span><span class="s2">如果发现个人信息可能被泄露，您可以通过</span><span class="s3">&nbsp;Topos</span><span class="s2">投诉举报，我们将在</span><span class="s3">15</span><span class="s2">个工作日内联络您并完成核查和处理；</span>
+            </p>
+            <p class="p2">
+                <br />
+            </p>
+            <p class="p4">
+                <span class="s2">3.&nbsp;</span><span class="s1">我们还设立了意见、建议反馈邮箱</span><span class="s2">: aego@muo.xyz/
+				jiatong.li@muo.xyz/</span>
+            </p>
+            <p class="p3">
+                <span class="s2">与我们联系，我们将在</span><span class="s3">15</span><span class="s2">个工作日内联络您并完成核查和处理。</span>
+            </p>
+        </div>
+
+        <!-- Scroll to the top button -->
+        <button id="btnScrollToTop">
+			<i class="material-icons">keyboard_arrow_up</i>
+		</button>
+
+        <!-- (Web) footer -->
+        <div class="Footer">
+            <div class="credit">
+                <b>Copyright 2020 by Topos</b>
+            </div>
+            <div class="footer-link">
+                <ul>
+                    <a>
+                        <li>
+                            <a href="/" class="footer-main-page"><b>主页</b></a>
+                        </li>
+                    </a>
+                    <a>
+                        <li>
+                            <a href="/About" class="footer-about-page"><b>关于</b></a>
+                        </li>
+                    </a>
+                    <a>
+                        <li>
+                            <a href="/Privacy-policy" class="footer-privacy-page"><b>隐私条款</b></a>
+                        </li>
+                    </a>
+                    <a>
+                        <li><b>联系我们</b></li>
+                    </a>
                 </ul>
             </div>
         </div>
+
+
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -1415,6 +980,8 @@
         <!--Insert semantic JS-->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="/semantic.min.js"></script>
-</body>
+    </body>
+
+</html>
 
 </html>

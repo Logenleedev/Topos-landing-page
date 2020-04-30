@@ -359,3 +359,11 @@ a.footer-about-page,
         display: none;
     }
 }
+
+
+/* change the text selection color to theme purple */
+
+::selection {
+    background-color: #6979F8;
+    color: white;
+}
