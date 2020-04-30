@@ -187,6 +187,7 @@ a.footer-about-page,
     outline: none;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 #btnScrollToTop:active {
