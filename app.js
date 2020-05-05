@@ -6,14 +6,12 @@ var express = require("express");
 
     global.__basedir = __dirname;
 //Set up the port
-let port = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 
 //Host static asset
-app.use(express.static('Semantic-UI-CSS-master'));
-
 app.use(express.static(path.join(__dirname,'src')));
-app.use(express.static(path.join(__dirname,'control')));
-app.use(express.static(path.join(__dirname,'Assest')));
+app.use(express.static(path.join(__dirname,'public')));
+
 
 
 // bodyparser middleware

@@ -143,7 +143,7 @@ a {
     display: flex;
     position: static;
     justify-content: center;
-    background: url("/image/luca-onniboni-4v9Kk01mEbY-unsplash.jpg") no-repeat center center fixed;
+    background: url("/Asset/image/luca-onniboni-4v9Kk01mEbY-unsplash.jpg") no-repeat center center fixed;
     background-size: auto;
     width: 100%;
     height: 100vh;
