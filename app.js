@@ -20,7 +20,7 @@ app.use(bodyparser.urlencoded({extended:false}));
 
 //HOME GET
 app.get('/',(req,res)=>{
-    res.sendFile('./src/views/main.html',  { root: __dirname });
+    res.sendFile('./src/views/Main.html',  { root: __dirname });
 })
 
 //ABOUT GET
