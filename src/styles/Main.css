@@ -2,6 +2,12 @@
 html5 Reset Stylesheet
 */
 
+/* change the text selection color to theme purple */
+::selection {
+    background-color: #6979F8;
+    color: white;
+}
+
 html,
 body,
 div,
@@ -127,18 +133,8 @@ a {
 /*the start of my code edit*/
 
 
-/* (Web) navigation bar */
-
-#web-menu {
-    position: fixed;
-    margin-top: 0px;
-    left: 0px;
-    right: 0px;
-}
-
 
 /* (Web) Banner image in the main page */
-
 .banner {
     display: flex;
     position: static;
@@ -154,90 +150,43 @@ a {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
+    color: white;
+    font-size: 40px;
 }
 
-
-/* (Web) Product Introduction */
-
-
-/* (Web) Row 1 */
-
-#Section-One-Container {
-    padding: 20% 10% 20% 20%;
+/* Image Showcase CSS */
+.showcase .showcase-text {
+    padding: 3rem;
 }
-
-#Section-One-Container-text {
-    padding: 3%;
-    display: flex;
-    align-items: center;
+  
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
 }
-
-#Section-One-Container-text .title {
-    font-family: 'FZYaoti', cursive;
-    font-size: 35px;
-    color: black;
-    width: 100%;
-    padding: 20% 10% 20% 20%;
-}
-
-
-/* (Web) Row 2 */
-
-#Section-Two-Container {
-    padding: 10% 10% 10% 20%;
-}
-
-#Section-Two-Container-text {
-    padding: 3%;
-    display: flex;
-    align-items: center;
-}
-
-#Section-Two-Container-text .title {
-    font-family: 'FZYaoti', cursive;
-    font-size: 35px;
-    color: black;
-    width: 100%;
-    padding: 0 10% 20% 20%;
-}
-
-
-/* (Web) Row 3 */
-
-#Section-Three-Container {
-    padding: 10% 10% 10% 20%;
-}
-
-#Section-Three-Container-text {
-    padding: 3%;
-    display: flex;
-    align-items: center;
-}
-
-#Section-Three-Container-text .title {
-    font-family: 'FZYaoti', cursive;
-    font-size: 35px;
-    color: black;
-    width: 100%;
-    padding: 0 10% 20% 20%;
+  
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
 }
 
 
 /* (Web) Download Link  */
-
 .download-description {
     color: black;
     font-family: 'FZYaoti', cursive;
     font-size: 25px;
 }
 
-.Trigger {
+.Mobile-Trigger,
+.Web-Trigger {
     text-align: center;
     margin: 5% auto;
     padding: 10%;
 }
 
-.Trigger h1 {
+.Mobile-Trigger h1,
+.Web-Trigger h1 {
     color: white;
 }
 
@@ -255,7 +204,6 @@ a {
 
 
 /* (Web) Footer */
-
 .Footer {
     display: flex;
     justify-content: space-between;
@@ -265,10 +213,7 @@ a {
 
 
 /* Change footer link color to black */
-
-
 /* (Web) Footer Link  */
-
 a.footer-main-page,
 a.footer-privacy-page,
 a.footer-about-page,
@@ -291,7 +236,6 @@ a.footer-about-page,
 
 
 /* Mobile Side */
-
 @media screen and (max-width: 768px) {
     /* Responsive Menu */
     /* make the web menu disappear */
@@ -342,11 +286,18 @@ a.footer-about-page,
         width: 100%;
         height: auto;
     }
+
+    .Footer {
+        display: none;
+    }
+
+    .Web-Trigger {
+        display: none;
+    }
 }
 
 
 /* Web Side */
-
 @media screen and (min-width: 768px) {
     #mobile-menu {
         display: none;
@@ -361,9 +312,8 @@ a.footer-about-page,
 }
 
 
-/* change the text selection color to theme purple */
 
-::selection {
-    background-color: #6979F8;
-    color: white;
-}
+
+
+
+
