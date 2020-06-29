@@ -284,8 +284,8 @@ a.footer-about-page,
     .banner__content {
         margin-top: auto;
         margin-bottom: auto;
-        text-align: left;
-        color: white;
+        text-align: center;
+        color:  #243456;
     }
 
     a.navbar-brand {
