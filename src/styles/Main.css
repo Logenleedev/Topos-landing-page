@@ -8,6 +8,11 @@ html5 Reset Stylesheet
     color: white;
 }
 
+/* Set icon grid background color to white */
+.bg-light {
+    background-color: white !important;
+}
+
 html,
 body,
 div,
@@ -144,30 +149,62 @@ a {
     width: 100%;
     height: 100vh;
     margin-top: 0px;
+    
 }
 
 .banner__content {
     margin-top: auto;
     margin-bottom: auto;
-    text-align: center;
-    color: white;
+    margin-left: 10%;
+    width: 100%;
+    text-align: left;
+    color: #243456;
+}
+
+
+.banner__content h1{
     font-size: 40px;
 }
 
+.banner__content p{
+    font-size: 20px;
+}
 /* Image Showcase CSS */
 .showcase .showcase-text {
     padding: 3rem;
 }
-  
+
 .showcase .showcase-img {
     min-height: 30rem;
     background-size: cover;
 }
-  
+
 @media (min-width: 768px) {
     .showcase .showcase-text {
-      padding: 7rem;
+        padding: 7rem;
     }
+}
+
+/* Web Icon Grid */
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
 }
 
 
@@ -237,11 +274,20 @@ a.footer-about-page,
 
 /* Mobile Side */
 @media screen and (max-width: 768px) {
+
     /* Responsive Menu */
     /* make the web menu disappear */
     #web-menu {
         display: none;
     }
+
+    .banner__content {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        color: white;
+    }
+
     a.navbar-brand {
         padding-top: 0;
         padding-bottom: 0;
@@ -251,25 +297,28 @@ a.footer-about-page,
         display: inline-block;
         margin-left: 0;
     }
+
     /* Make the mobile navigation burger menu icon float to the right */
     button.navbar-toggler {
         float: right;
     }
+
     /* Set logo for mobile navigation bar */
     img.mobile-logo {
         width: 100%;
     }
+
     .logo-button {
         width: 90%;
         display: inline;
         margin-left: auto;
     }
+
     .web-product-intro {
         display: none;
     }
-    .banner {
-        display: none;
-    }
+
+
     div.mobile-product-container {
         width: 100%;
         padding: 0;
@@ -277,11 +326,13 @@ a.footer-about-page,
         margin-right: 0;
         margin-top: 5%;
     }
+
     div.description-container {
         margin: 10%;
         text-align: center;
         font-size: 30px;
     }
+
     #image-container img {
         width: 100%;
         height: auto;
@@ -302,18 +353,13 @@ a.footer-about-page,
     #mobile-menu {
         display: none;
     }
+
     .logo-button {
         display: inline;
     }
+
     .mobile-download,
     .mobile-product-container {
         display: none;
     }
 }
-
-
-
-
-
-
-
