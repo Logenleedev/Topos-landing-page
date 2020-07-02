@@ -217,25 +217,24 @@ a {
     font-size: 25px;
 }
 
-.Mobile-Trigger,
 .Web-Trigger {
-    text-align: center;
-    margin: 5% auto;
-    padding: 10%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: middle;
+    width: 20%;
+    margin-top: 5%;
 }
 
-.Mobile-Trigger h1,
+.Android-Download {
+    margin-left: 10%;
+}
+
+
 .Web-Trigger h1 {
     color: white;
 }
 
-.Apple-Download {
-    margin-top: 3% !important;
-}
-
-.Android-Download {
-    margin-top: 3% !important;
-}
 
 #save-button {
     margin-top: 2%;
@@ -285,11 +284,21 @@ a.footer-about-page,
 
 
     .banner__content {
-        margin-top: auto;
-        margin-bottom: 25%;
+        margin: 0px;
+        width: 100%;
+        display: relative;
         text-align: center;
         color:  #243456;
     }
+
+    .banner__description {
+        margin: 20px;
+    }
+
+    .banner__description p{
+        font-size: 15px;
+    }
+
 
     a.navbar-brand {
         padding-top: 0;
@@ -299,6 +308,17 @@ a.footer-about-page,
         width: 9% !important;
         display: inline-block;
         margin-left: 0;
+    }
+
+    .Web-Trigger {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        width: 80%;
+        margin-top: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* Make the mobile navigation burger menu icon float to the right */
@@ -345,9 +365,6 @@ a.footer-about-page,
         display: none;
     }
 
-    .Web-Trigger {
-        display: none;
-    }
 }
 
 
